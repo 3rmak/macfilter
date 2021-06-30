@@ -1,0 +1,50 @@
+#!/bin/sh /etc/rc.common
+
+START=10
+STOP=15
+
+pid_file="/var/run/$name.pid"
+dir="/etc/macfilter_client"
+app="sh run.sh &>/dev/null &"
+
+stdout_log="/var/log/$name.log"
+stderr_log="/var/log/$name.err"
+
+is_working(){
+        if [ -f $pid_file ]; then
+                echo true
+        else
+                echo false
+        fi
+}
+
+start(){
+  if [ -d $dir ]; then
+      if ! `is_working` ; then
+
+                cd $dir
+                $app >> "$stdout_log" 2>> "$stderr_log" &
+                echo `pgrep -f run.sh` > "$pid_file"
+                echo `pgrep -f sleep` >> "$pid_file"
+                echo "Working.."
+
+        else
+                echo "App working now"
+
+        fi
+  fi
+}
+stop(){
+  if `is_working` ; then
+
+                kill $(cat $pid_file)
+
+                rm $pid_file
+
+                echo "Closed!"
+        else
+                echo "App is not working now!"
+
+        fi
+
+}

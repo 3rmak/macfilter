@@ -1,0 +1,45 @@
+#!/bin/bash
+. /usr/share/libubox/jshn.sh
+
+TIMEOUT = 60
+
+while true
+do
+
+    if [ ! `cmp -s file.json res.json`]; then
+
+            if [ -f /etc/firewall.user ]; then
+                    rm /etc/firewall.user
+            fi
+
+            count=`grep -o -i "mac" file.json | wc -l`
+
+            i=0; while [ $i -lt $count ]; do
+
+                    test=`cat file.json | jq '(."'$i'") | {mac, allowed}'`
+
+                    json_load "$test"
+
+                    json_select
+
+                    json_get_var mac mac
+
+                    json_get_var allowed allowed
+
+                    echo "Device with mac: $mac - allowed: $allowed"
+
+                    if [ $allowed -eq 1 ]; then
+
+                            echo "iptables -A INPUT -m mac --mac-source $mac -j DROP" >> /etc/firewall.user
+
+                            echo "iptables -A FORWARD -m mac --mac-source $mac -j DROP" >> /etc/firewall.user
+                    fi
+
+                    i=$(($i + 1))
+
+            done
+
+    fi
+
+    sleep $TIMEOUT
+done

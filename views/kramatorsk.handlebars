@@ -1,0 +1,28 @@
+{{> header}}
+<body>
+{{> navbar}}
+<div class="container pt-3" id="app" v-cloak>
+    <h1>Devices</h1>
+    <div v-if="devices.length">
+        <div class="card mb-3 mt-3" v-for="device in devices" :style="{background: device.allowed ? '#4EE475' : '#CD5C5C'}" style="width: 30rem;">
+            <div class="card-body" v-if="device.department === '60daba810749b827e0cb8448'">
+                <h4 class="card-title">{{device.type}}</h4>
+                <p class="card-text"><b>Владелец:</b> {{device.owner}}</p>
+                <p class="card-text"><b>Мак адресс:</b> {{device.mac}}</p>
+                <p class="card-text"><b>Дата добавления:</b> {{device.addingDate}}</p>
+                <div v-if="device.comment">
+                    <hr>
+                    <p class="text-secondary">{{device.comment}}</p>
+                </div>
+
+                <button class="btn btn-success" v-on:click="allowDevice(device._id)" :disabled="device.allowed">Разрешить</button>
+                <button class="btn btn-danger" v-on:click="disallowDevice(device._id)" :disabled="!device.allowed">Запретить</button>
+            </div>
+        </div>
+        <button class="btn-primary" v-on:click="applyChanges()">Сохранить изменения</button>
+    </div>
+    <p v-else="">Список пользователей пуст</p>
+
+</div>
+</body>
+</html>
