@@ -1,20 +1,13 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const path = require("path");
+const cors = require('cors');
 //const exphbs  = require('express-handlebars');
 const deviceRoutes = require("./routes/devices");
 const departmentRoutes = require("./routes/departmens");
 require("dotenv").config();
 
 const app = express();
-
-// app.engine('handlebars', exphbs());
-// app.set('view engine', 'handlebars');
-// app.set('views', 'views')
-//
-// app.get("/kramatorsk", (req, res) => {
-//   res.render("kramatorsk")
-// });
 
 async function start() {
   try {
@@ -25,30 +18,33 @@ async function start() {
         useFindAndModify: false
       })
       .then(() => {
-        console.log("MongoDB started successfully!");
+        console.log("Connection to MongoDB successfully!");
       });
 
     app.use(deviceRoutes);
     app.use(departmentRoutes);
+    app.use(cors())
 
+    app.use(express.json({ extended: true }))
+    app.use('/api/auth', require('./routes/auth.routes'))
 
     app.get("/", (req, res) => {
-      res.sendFile(path.resolve(__dirname, "client", "index.html"));
+      res.sendFile(path.resolve(__dirname, "public", "index.html"));
     });
 
     app.get("/createDevice", (req, res) => {
-      res.sendFile(path.resolve(__dirname, "client", "createDevice.html"));
+      res.sendFile(path.resolve(__dirname, "public", "createDevice.html"));
     });
 
     app.get("/kramatorsk", (req, res) => {
-      res.sendFile(path.resolve(__dirname, "client", "kramatorsk.html"));
+      res.sendFile(path.resolve(__dirname, "public", "kramatorsk.html"));
     });
 
     app.get("/createDepartment", (req, res) => {
-      res.sendFile(path.resolve(__dirname, "client", "createDepartment.html"));
+      res.sendFile(path.resolve(__dirname, "public", "createDepartment.html"));
     });
 
-    app.use(express.static(path.resolve(__dirname, "client")));
+    app.use(express.static(path.resolve(__dirname, "public")));
 
     app.listen(process.env.port, "0.0.0.0", () => {
       console.log("Server has been started ");

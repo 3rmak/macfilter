@@ -9,7 +9,9 @@ const router = Router()
 router.get('/api/devices', async (req, res) => {
     try {
         const devices = await Device.find()
-        await res.status(200).json(devices)
+        res.header("Access-Control-Allow-Origin", "*")
+        res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
+        res.status(200).json(devices)
     } catch (e) {
         console.warn(e)
     }
@@ -36,8 +38,9 @@ router.post('/api/devices', async (req, res) => {
                     console.log("Success:", success);
                 }
             })
-
-        await res.status(201).json(item)
+        res.header("Access-Control-Allow-Origin", "*")
+        res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
+        res.status(201).json(item)
     } catch (e) {
         console.log("error occurred", e)
     }
@@ -47,7 +50,7 @@ router.post('/api/devices', async (req, res) => {
 router.patch('/api/devices', async(req, res) => {
     const devices = {...req.body}
     try {
-        await Object.values(devices).map(cur => {
+        Object.values(devices).map(cur => {
             Device.updateOne({_id: cur._id}, {
                 $set: {
                     allowed: cur.allowed
@@ -55,6 +58,8 @@ router.patch('/api/devices', async(req, res) => {
 
             }).exec()
         })
+        res.header("Access-Control-Allow-Origin", "*")
+        res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
         res.status(200).json(devices)
     } catch (e) {
         console.log('Error: ', e)
