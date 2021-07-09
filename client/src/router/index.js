@@ -1,12 +1,16 @@
 import VueRouter from 'vue-router'
 
-
 import MainPage from '../pages/MainPage'
 import DepartmentsLayout from '../pages/DepartmentsLayout'
 import AllDepartmentsPage from '../pages/AllDepartmentsPage'
 import DepartmentPage from '../pages/DepartmentPage'
+
 import CreateDevice from '../pages/CreateDevice'
 import CreateDepartment from '../pages/CreateDepartment'
+import RegisterPage from '../pages/RegisterPage'
+
+import LoginPage from '../pages/LoginPage'
+
 import NotFound from '../pages/404'
 // import AllFilmsPage from '../pages/AllFilmsPage'
 // import FilmPage from '../pages/FilmPage'
@@ -23,13 +27,23 @@ export default new VueRouter({
     },
     {
       path: '/login',
-      name: 'login'
-
+      name: 'login',
+      component: LoginPage
     },
     {
-      path: '/register',
-      name: 'register'
-
+      path: '/createUser',
+      name: 'createUser',
+      component: RegisterPage
+    },
+    {
+      path: '/createDevice',
+      name: 'createDevice',
+      component: CreateDevice
+    },
+    {
+      path: '/createDepartment',
+      name: 'createDepartment',
+      component: CreateDepartment
     },
     {
       path: '/departments',
@@ -59,16 +73,7 @@ export default new VueRouter({
         },
     ]
     },
-    {
-      path: '/createDevice',
-      name: 'createDevice',
-      component: CreateDevice
-    },
-    {
-      path: '/createDepartment',
-      name: 'createDepartment',
-      component: CreateDepartment
-    },
+    
     // {
     //   path: '/films',
     //   name: 'filmsLayout',

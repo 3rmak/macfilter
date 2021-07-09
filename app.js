@@ -2,7 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const path = require("path");
 const cors = require('cors');
-//const exphbs  = require('express-handlebars');
+const authRoutes = require('./routes/auth.routes');
 const deviceRoutes = require("./routes/devices");
 const departmentRoutes = require("./routes/departmens");
 require("dotenv").config();
@@ -21,12 +21,12 @@ async function start() {
         console.log("Connection to MongoDB successfully!");
       });
 
+    app.use(express.json({ extended: true }))
     app.use(deviceRoutes);
     app.use(departmentRoutes);
+    app.use('/api/auth', authRoutes)
     app.use(cors())
-
-    app.use(express.json({ extended: true }))
-    app.use('/api/auth', require('./routes/auth.routes'))
+  
 
     app.get("/", (req, res) => {
       res.sendFile(path.resolve(__dirname, "public", "index.html"));
