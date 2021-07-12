@@ -5,15 +5,26 @@
       <h1>Страница входа</h1>
       <form class="form-container">
         <div class="form-group">
-          <label for="exampleInputEmail1">Email:</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email@farbex.com.ua">
-          <small id="emailHelp" class="form-text text-muted">Никогда не делитесь своими личными данными.</small>
+          <label for="email">Email:</label>
+          <input 
+            type="email" 
+            class="form-control" 
+            id="email" 
+            placeholder="email@farbex.com.ua" 
+            v-model="loginForm.email">
         </div>
         <div class="form-group">
           <label for="exampleInputPassword1">Пароль:</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Пароль">
+          <input 
+            type="password" 
+            class="form-control" 
+            id="exampleInputPassword1" 
+            aria-describedby="passHelp" 
+            placeholder="Пароль" 
+            v-model="loginForm.password">
+          <small id="passHelp" class="form-text text-muted">Никогда не делитесь своими личными данными.</small>
         </div>
-        <button type="submit" class="btn btn-primary">Войти</button>
+        <button type="button" class="btn btn-primary" @click="login">Войти</button>
       </form>
     </div>
   </div>
@@ -23,12 +34,35 @@
 <script>
 
 import Navbar from '../components/Navbar'
+import request from '../assets/scripts/request'
 
 export default {
-  components: {Navbar}
+  components: {Navbar},
+  data (){
+    return {
+      loginForm: {
+        email: '',
+        password: '',
+      },
+      url: "http://localhost:3001",
+    }
+  },
+  methods: {
+    async login (){
+      const user = {...this.loginForm}
+      const response = await request(`${this.url}/api/auth/login`, "POST", user)
+      this.$swal({text: response.message}).then(function(isConfirm) {
+            if (isConfirm) {
+              location.reload()
+            }
+          })
+    }
+  }
 }
 </script>
 
 <style>
-
+.form-container {
+  margin-top: 30px;
+}
 </style>

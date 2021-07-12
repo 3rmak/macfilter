@@ -25,7 +25,9 @@ router.post(
     // check('password', 'Минимальный пароль 6 символов').isLength({min: 6})
     async (req, res) => {
         try {
+
             const validationErrors = validationResult(req)
+
             if (!validationErrors.isEmpty()) {
                 return res.status(400).json({
                     errors: validationErrors.array(),
@@ -41,6 +43,7 @@ router.post(
             if (candidate) {
                 return res.status(400).json({ message: 'Пользователь с таким email уже существует' })
             }
+
             const hashedPass = await bcrypt.hash(password, 12)
             const user = new User({ email, password: hashedPass, position, id: v4(), access})
             await user.save()
@@ -60,8 +63,7 @@ router.post(
     ],
     async (req, res) => {
         try {
-            // res.header("Access-Control-Allow-Origin", "*")
-            // res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
+
             const authErrors = validationResult(req)
 
             if (!authErrors.isEmpty()) {
@@ -79,9 +81,10 @@ router.post(
 
             if (!user) {
                 // return res.status(400).json({ message: 'Пользоватлея с таким email -не существует' })
-                return res.status(400).json({ message: 'Пользователя с таким email -не существует' })
+                return res.status(400).json({ message: 'Пользователя с таким email - не существует' })
 
             }
+
             const isMatch = await bcrypt.compare(password, user.password)
 
             if (!isMatch) {
@@ -93,7 +96,7 @@ router.post(
                 config.get('jwtSecret'),
                 { expiresIn: '1h' }
             )
-            return res.json({ token, userId: user.id })
+            return res.json({ token, userId: user.id, message: 'Авторизовано'})
 
         } catch (e) {
             return res.status(500).json({ message: 'Вход невозможен. Серверная ошибка' })
