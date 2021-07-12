@@ -19,21 +19,30 @@
       <div class="form-group">
         <label for="position">Должность</label>
         <select class="form-control" id="position" v-model="userForm.position">
-          <option>Начальник РОП</option>
-          <option>Дивизионал/Регионал</option>
-          <option>Админ</option>
+          <option v-for="(item, key) in positions" :value="key" :key="item">
+            {{item}}
+          </option>
         </select>
       </div>
       <div class="form-group">
         <label for="access">Доступ к филиалам</label>
         <div v-if="multipleSelect">
           <select multiple class="form-control" id="access" aria-describedby="selectHelp" v-model="userForm.access">
-            <option 
+            <!-- <option 
             v-for="department in departments" 
             :key="department.id" 
-            >{{ department.name }}</option>
+            >{{ department.name }}</option> -->
+            <option
+            v-for="department in departments"
+            :key="department.name"
+            :value="department._id"
+            >{{ department.name }}
+            </option>
           </select>
-          <small id="selectHelp" class="form-text text-muted">*Разрешить доступ к нескольким филиалам можно выбрав их с помощью зажатой кнопки Ctrl.</small>
+          <small 
+          id="selectHelp" 
+          class="form-text text-muted">*Разрешить доступ к нескольким филиалам можно выбрав их с помощью зажатой кнопки Ctrl.
+          </small>
         </div>
         <div v-else>
           <select class="form-control" id="access" v-model="userForm.access">
@@ -42,7 +51,7 @@
         </div>
       </div>
       <div class="form-group">
-        <button class="btn btn-success" type="submit" @click="createUser">Создать пользователя</button>
+        <button class="btn btn-success" type="button" @click="createUser">Создать пользователя</button>
       </div>
     </form>
     </div>
@@ -62,26 +71,55 @@ export default {
       userForm: {
         email: "",
         password: "",
-        position: "Админ",
-        access: []
+        position: "admin",
+        access: [],
       },
+      positions: {"admin":"Администратор","nachrop":"Начальник РОП","regional":"Дивизионал"},
       departments: [],
-      re_password: ""
+      re_password: "",
+      url: "http://localhost:3001",
     }
   },
   methods: {
     async createUser (){
-      //const user = {...userForm}
-      const password = this.userForm.password
-      if(password !== this.re_password){
-        this.$swal('Пароли не совпадают!')
+      try {
+        const user = {...this.userForm}
+        const password = this.userForm.password
+        if(password !== this.re_password){
+          this.$swal('Пароли не совпадают!')
+          .then(function(isConfirm) {
+            if (isConfirm) {
+              location.reload()
+            }
+          })
+        }
+        else{
+          const response = await request(`${this.url}/api/auth/register`, "POST", user)
+          console.log(response.message)
+          this.$swal({
+            text: response.message, 
+            type: "success"
+            })
+          .then(function(isConfirm) {
+            if (isConfirm) {
+              location.reload()
+            }
+          })
+        }
+      } catch (error) {
+        this.$swal({
+          title: 'Произошла ошибка, обратитесь к системному администратору!', 
+          text: error.message, 
+          type: "success"
+          })
       }
+      
     }
   },
   computed: {
     multipleSelect (){
       const user = {...this.userForm}
-      if(user.position === "Начальник РОП"){
+      if(user.position === "nachrop"){
         return false  
       }
       return true
@@ -91,6 +129,34 @@ export default {
     this.departments = JSON.parse(localStorage.getItem('departments'))
   }
 }
+
+const request = async (url, method="GET", data=null) => {
+    try {
+        const headers = {}
+        const mode = 'cors'
+        let body
+        if(data){
+            headers['Content-Type'] = 'application/json'
+            headers['Access-Control-Allow-Origin'] = '*',
+            headers['Access-Control-Allow-Methods'] = 'GET, POST',
+            headers['Access-Control-Allow-Headers'] = 'Content-Type',
+            headers['Access-Control-Max-Age'] = '3600'
+            body = JSON.stringify(data)
+            console.log("BOdy",body)
+        }
+
+        const response = await fetch(url, {
+            method,
+            mode,
+            headers,
+            body
+        })
+        return await response.json()
+    } catch (e){
+        console.warn('Errorinio: ', e.message)
+    }
+}
+
 </script>
 
 <style>

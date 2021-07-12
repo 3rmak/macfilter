@@ -14,6 +14,9 @@ const schema = new Schema({
         type: String, 
         required: true 
     },
+    access: {
+        type: Object,
+    }
 })
 
 module.exports = model('User', schema)

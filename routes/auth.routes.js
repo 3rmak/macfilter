@@ -1,11 +1,18 @@
 const { Router } = require('express')
 const User = require('../models/User')
 const { check, validationResult } = require('express-validator')
+const {v4} = require('uuid')
 const jwt = require('jsonwebtoken')
 const config = require('config')
 const bcrypt = require('bcryptjs')
 const router = Router()
+const cors = require('cors')
 
+router.use(
+    cors({
+        origin: "*",
+    })
+)
 // /api/auth/register
 router.post(
     '/register',
@@ -18,9 +25,7 @@ router.post(
     // check('password', 'Минимальный пароль 6 символов').isLength({min: 6})
     async (req, res) => {
         try {
-
             const validationErrors = validationResult(req)
-
             if (!validationErrors.isEmpty()) {
                 return res.status(400).json({
                     errors: validationErrors.array(),
@@ -29,23 +34,19 @@ router.post(
                 })
             }
 
-            const { email, password } = req.body
+            const { email, password, position, access} = req.body
 
             const candidate = await User.findOne({ email })
 
             if (candidate) {
                 return res.status(400).json({ message: 'Пользователь с таким email уже существует' })
             }
-
             const hashedPass = await bcrypt.hash(password, 12)
-            const user = new User({ email, password: hashedPass , position})
-
+            const user = new User({ email, password: hashedPass, position, id: v4(), access})
             await user.save()
-
-            res.status(201).json({ message: 'Пользователь создан' })
-
+            return res.status(201).json({ message: 'Пользователь создан' })
         } catch (e) {
-            res.status(500).json( { message: 'Невозможно создать пользователя. Серверная ошибка'})
+            return res.status(500).json( { message: 'Невозможно создать пользователя. Серверная ошибка'})
         }
 
 })
@@ -59,9 +60,12 @@ router.post(
     ],
     async (req, res) => {
         try {
+            // res.header("Access-Control-Allow-Origin", "*")
+            // res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
             const authErrors = validationResult(req)
 
             if (!authErrors.isEmpty()) {
+                
                 return res.status(400).json({
                     errors: authErrors.array(),
                     // message: 'Во время аутентификации произошла ошибка'
@@ -75,7 +79,7 @@ router.post(
 
             if (!user) {
                 // return res.status(400).json({ message: 'Пользоватлея с таким email -не существует' })
-                return res.status(400).json({ message: 'Пользоватлея с таким email -не существует' })
+                return res.status(400).json({ message: 'Пользователя с таким email -не существует' })
 
             }
             const isMatch = await bcrypt.compare(password, user.password)
@@ -89,11 +93,10 @@ router.post(
                 config.get('jwtSecret'),
                 { expiresIn: '1h' }
             )
-
-            res.json({ token, userId: user.id })
+            return res.json({ token, userId: user.id })
 
         } catch (e) {
-            res.status(500).json({ message: 'Вход невозможен. Серверная ошибка' })
+            return res.status(500).json({ message: 'Вход невозможен. Серверная ошибка' })
         }
 
     })
