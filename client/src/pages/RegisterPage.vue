@@ -17,9 +17,9 @@
           <input type="password" class="form-control" id="re-password" placeholder="Password" v-model="re_password" required>
         </div>
       <div class="form-group">
-        <label for="position">Должность</label>
-        <select class="form-control" id="position" v-model="userForm.position">
-          <option v-for="(item, key) in positions" :value="key" :key="item">
+        <label for="role">Должность</label>
+        <select class="form-control" id="role" v-model="userForm.role">
+          <option v-for="(item, key) in roles" :value="key" :key="item">
             {{item}}
           </option>
         </select>
@@ -72,10 +72,10 @@ export default {
       userForm: {
         email: "",
         password: "",
-        position: "admin",
+        role: "admin",
         access: [],
       },
-      positions: {
+      roles: {
         "nachrop": "Начальник РОП",
         "regional": "Дивизионал",
         "admin": "Администратор",
@@ -115,7 +115,7 @@ export default {
         this.$swal({
           title: 'Произошла ошибка, обратитесь к системному администратору!', 
           text: error.message, 
-          type: "success"
+          type: "error"
           })
       }
       
@@ -124,7 +124,7 @@ export default {
   computed: {
     multipleSelect (){
       const user = {...this.userForm}
-      if(user.position === "nachrop"){
+      if(user.role === "nachrop"){
         return false  
       }
       return true

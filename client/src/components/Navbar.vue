@@ -1,6 +1,9 @@
 <template>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="/">Главная</a>
+  <router-link  
+  class="navbar-brand" 
+  :to="$router.resolve({name: 'main'}).href">Главная
+  </router-link >
   <button 
   class="navbar-toggler" 
   type="button" 
@@ -15,29 +18,37 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a 
+        <router-link 
         class="nav-link" 
         aria-current="page" 
-        :href="$router.resolve({name: 'departmentsLayout'}).href"
+        :to="$router.resolve({name: 'departmentsLayout'}).href"
         >Все филиалы
-        </a>
+        </router-link>
       </li>
       <li class="nav-item">
-        <a 
+        <router-link 
         class="nav-link" 
         aria-current="page" 
-        :href="$router.resolve({name: 'createDevice'}).href"
+        :to="$router.resolve({name: 'adminPage'}).href"
+        >Админ панель
+        </router-link>
+      </li>
+      <!-- <li class="nav-item">
+        <router-link  
+        class="nav-link" 
+        aria-current="page" 
+        :to="$router.resolve({name: 'createDevice'}).href"
         >Добавить устройство
-        </a>
+        </router-link >
       </li>
       <li class="nav-item">
-        <a 
+        <router-link  
         class="nav-link" 
         aria-current="page" 
-        :href="$router.resolve({name: 'createUser'}).href"
+        :to="$router.resolve({name: 'createUser'}).href"
         >Создать пользователя
-        </a>
-      </li>
+        </router-link >
+      </li> -->
       <!-- <li class="nav-item">
         <a 
         class="nav-link" 
@@ -45,7 +56,7 @@
         >Добавить филиал
         </a>
       </li> -->
-      <li class="nav-item dropdown">
+      <!-- <li class="nav-item dropdown">
         <button 
         class="btn btn-default dropdown-toggle" 
         type="button" 
@@ -58,23 +69,24 @@
           v-for="department in departments" 
           :key="department"
           >
-            <a 
+            <router-link 
             class="nav-link" 
-            :href="$router.resolve({name: 'departmentPage', params: {id: department._id}}).href"
+            :to="$router.resolve({name: 'departmentPage', params: {id: department._id}}).href"
             >{{ department.name }}
-            </a>
+            </router-link >
           </div>
           <div class="dropdown-divider"></div>
-          <a class="nav-link" :href="$router.resolve({name: 'createDepartment'}).href">New Department</a>
+          <router-link  class="nav-link" :to="$router.resolve({name: 'createDepartment'}).href">New Department</router-link >
         </div>
-      </li>
+      </li> -->
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <a 
-      class="btn btn-outline-success my-2 my-sm-0" 
-      :href="$router.resolve({name: 'login'}).href"
-      >Войти
-      </a >
+      <router-link 
+        class="btn btn-outline-success my-2 my-sm-0" 
+        :to="$router.resolve({name: 'login'}).href"
+        >Войти
+      </router-link >
+      
       <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit" @click="changeUserState"
         >
           {{ auth ? 'Выйти' : 'Войти' }}
@@ -90,12 +102,14 @@ export default {
   data() {
     return {
       auth: false,
+      access: [],
       departments: [],
       url: "http://localhost:3001"
     }
   },
   async created() {
     this.auth = localStorage.getItem('auth') !== null
+    this.access = JSON.parse(localStorage.getItem('access'))
 
     this.departments = await request(`${this.url}/api/departments`)
     localStorage.setItem('departments', JSON.stringify(this.departments))

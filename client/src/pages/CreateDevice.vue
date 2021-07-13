@@ -67,7 +67,6 @@
           <button type="submit" class="btn btn-primary">Добавить</button>
         </div>
       </form>
-      <button class="btn btn-secondary" @click="logDep">Log</button>
     </div>
   </div>
 </template>
@@ -99,9 +98,6 @@ export default ({
             const {...device} = this.form
             await request(`${this.url}/api/devices`, "POST", device)
             this.devices = await request(`${this.url}/api/devices`)
-    },
-    logDep (){
-      console.log(this.departments);
     }
   },
   async created (){

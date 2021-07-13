@@ -53,7 +53,11 @@ export default {
       const response = await request(`${this.url}/api/auth/login`, "POST", user)
       this.$swal({text: response.message}).then(function(isConfirm) {
             if (isConfirm) {
+              localStorage.setItem('jwt', response.token)
+              localStorage.setItem('access', JSON.stringify(response.user.access))
+              localStorage.setItem('role', response.user.role)
               location.reload()
+              //this.$router.push({ name: 'main'})
             }
           })
     }

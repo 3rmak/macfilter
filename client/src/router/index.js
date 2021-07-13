@@ -11,6 +11,8 @@ import RegisterPage from '../pages/RegisterPage'
 
 import LoginPage from '../pages/LoginPage'
 
+import AdminPage from '../pages/AdminPage'
+
 import NotFound from '../pages/404'
 // import AllFilmsPage from '../pages/AllFilmsPage'
 // import FilmPage from '../pages/FilmPage'
@@ -29,6 +31,11 @@ export default new VueRouter({
       path: '/login',
       name: 'login',
       component: LoginPage
+    },
+    {
+      path: '/admin',
+      name: 'adminPage',
+      component: AdminPage
     },
     {
       path: '/createUser',
