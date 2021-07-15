@@ -12,6 +12,16 @@ module.exports = {
         console.warn(e)
     }
   },
+  get: async ({params: {id}, req, res}) => {
+    try {
+        const department = await Department.findById(id)
+        res.header("Access-Control-Allow-Origin", "*")
+        res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
+        res.status(200).json(department)
+    } catch (e) {
+        console.warn(e)
+    }
+  }, 
   post: (req, res) => {
     const department = {...req.body, id: v4()}
     const item = new Department({...department})

@@ -1,5 +1,6 @@
 const { Router } = require('express')
 const { check, validationResult } = require('express-validator')
+const passport = require('passport')
 const router = Router()
 const cors = require('cors')
 const AuthController = require('../controllers/auth')
@@ -12,7 +13,7 @@ router.use(
 // /api/auth/register
 router.post(
     '/api/auth/register',
-    [
+    [     
         check('email', 'email').isEmail(),
         check('password', 'pass').exists(),
         check('role', 'role').exists(),

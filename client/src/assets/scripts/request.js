@@ -11,7 +11,7 @@ const request = async (url, method="GET", data=null) => {
           headers['Access-Control-Max-Age'] = '3600'
           headers['Authorization'] = 'Bearer' + localStorage.getItem('jwt')
           body = JSON.stringify(data)
-          console.log("BOdy",body)
+          console.log("Body",body)
       }
 
       const response = await fetch(url, {

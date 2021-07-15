@@ -36,8 +36,9 @@ module.exports = {
             })
         res.header("Access-Control-Allow-Origin", "*")
         res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
-        res.status(201).json(item)
+        res.status(201).json({ message: 'Устройство добавлено' })
     } catch (e) {
+        res.status(500).json({ message: 'Произошла ошибка' })
         console.log("error occurred", e)
     }
   },

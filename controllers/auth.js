@@ -20,7 +20,7 @@ module.exports = {
         }
 
         const { email, password, role, access} = req.body
-
+        console.log("access", access)
         const candidate = await User.findOne({ email })
 
         if (candidate) {
@@ -32,7 +32,7 @@ module.exports = {
         await user.save()
         return res.status(201).json({ message: 'Пользователь создан' })
     } catch (e) {
-        return res.status(500).json( { message: 'Невозможно создать пользователя. Серверная ошибка'})
+        return res.status(500).json({ message: 'Невозможно создать пользователя. Серверная ошибка'})
     }
 
   },

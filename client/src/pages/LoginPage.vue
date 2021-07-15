@@ -51,16 +51,19 @@ export default {
     async login (){
       const user = {...this.loginForm}
       const response = await request(`${this.url}/api/auth/login`, "POST", user)
-      this.$swal({text: response.message}).then(function(isConfirm) {
+      console.log("response", response)
+      await this.$swal({text: response.message})
+        .then(function(isConfirm) {
             if (isConfirm) {
               localStorage.setItem('jwt', response.token)
               localStorage.setItem('access', JSON.stringify(response.user.access))
               localStorage.setItem('role', response.user.role)
-              location.reload()
-              //this.$router.push({ name: 'main'})
+              localStorage.setItem('user', JSON.stringify(response.user))
             }
           })
-    }
+      await this.$router.push('/')
+        }
+      
   }
 }
 </script>

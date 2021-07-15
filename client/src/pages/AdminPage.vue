@@ -10,31 +10,33 @@
           <div class="card" style="width: 21rem;">
             <img src="../assets/images/babka.jpg" class="card-img-top" alt="Зелька" style="width: 21rem; height: 21rem">
             <div class="card-body">
-              <h5 class="card-title">Добавить пользователя</h5>
-              <p class="card-text">Предоставляет возможность добавить администратора сервиса, начальника РОП или регионального менеджера.</p>
+              <h5 class="card-title">Пользователи</h5>
+              <p class="card-text">Управление пользовательскими учетными записями.</p>
             </div>
             <div class="card-footer">
-              <router-link :to="$router.resolve({name: 'createUser'}).href" class="btn btn-primary">Перейти</router-link>
+              <router-link :to="$router.resolve({name: 'createUser'}).href" class="btn btn-primary mb-2">Добавить нового юзера</router-link>
+              <router-link :to="$router.resolve({name: 'createUser'}).href" class="btn btn-primary mb-2">Изменить параметры для юзера</router-link>
             </div>
           </div>
           <div class="card" style="width: 21rem;">
             <img src="../assets/images/zelenij.jpg" class="card-img-top" alt="Зеленушка" style="width: 21rem; height: 21rem">
             <div class="card-body">
-              <h5 class="card-title">Добавить филиал</h5>
+              <h5 class="card-title">Филиалы</h5>
               <p class="card-text">Позволяет предоставить доступы для устройств, за настроеваемым маршрутизатором.</p>
             </div>
             <div class="card-footer">
-              <router-link :to="$router.resolve({name: 'createDepartment'}).href" class="btn btn-primary">Перейти</router-link>
+              <router-link :to="$router.resolve({name: 'createDepartment'}).href" class="btn btn-primary mb-2">Добавить филиал</router-link>
             </div>
           </div>
           <div class="card" style="width: 21rem;">
             <img src="../assets/images/manual.jpg" class="card-img-top" alt="Зелень" style="width: 21rem; height: 21rem">
             <div class="card-body">
-              <h5 class="card-title">Добавить устройство</h5>
+              <h5 class="card-title">Устройства</h5>
               <p class="card-text">Ручное добавление устройства в систему.</p>
             </div>
             <div class="card-footer">
-              <router-link :to="$router.resolve({name: 'createDevice'}).href" class="btn btn-primary">Перейти</router-link>
+              <router-link :to="$router.resolve({name: 'createDevice'}).href" class="btn btn-primary mb-2">Добавить устройство</router-link>
+              <router-link :to="$router.resolve({name: 'createDevice'}).href" class="btn btn-primary mb-2">Редактировать устройство</router-link>
             </div>
           </div>
         </div>

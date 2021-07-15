@@ -1,17 +1,14 @@
 <template>
-  <div class="department-card">
+  <div class="department-card" style="width: 25rem;">
     <div class="card text-center">
       <img class="card-img-top" src="../assets/images/logo.png" alt="Card image cap">
       <div class="card-body">
-        <!-- <div class="card-div">
-          <h5 class="card-title">{{ department.name }}</h5>
-        </div> -->
         <h5 class="card-title">{{ department.name }}</h5>
         <p class="card-devices">Устройств: {{ (department.devices).length/2 }}</p>
-        <a :href="$router.resolve({name: 'departmentPage', params: {id: department._id}}).href"
+        <router-link :to="$router.resolve({name: 'departmentPage', params: {id: department._id}}).href"
           class="more-info"
         >К устройствам
-        </a>
+        </router-link>
       </div>
     </div>
   </div>
@@ -33,6 +30,7 @@ export default {
 
 <style lang="scss" scoped>
   .card {
+    margin-bottom: 30px;
     margin-left: 30px;
     border-radius: 10px;
     border: 2px solid;

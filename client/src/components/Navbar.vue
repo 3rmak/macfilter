@@ -16,16 +16,16 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+    <ul class="navbar-nav mr-auto" v-if="auth">
       <li class="nav-item">
         <router-link 
         class="nav-link" 
         aria-current="page" 
         :to="$router.resolve({name: 'departmentsLayout'}).href"
-        >Все филиалы
+        >Мои филиалы
         </router-link>
       </li>
-      <li class="nav-item">
+      <li class="nav-item" v-if="role ==='admin'">
         <router-link 
         class="nav-link" 
         aria-current="page" 
@@ -80,19 +80,51 @@
         </div>
       </li> -->
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <router-link 
-        class="btn btn-outline-success my-2 my-sm-0" 
-        :to="$router.resolve({name: 'login'}).href"
-        >Войти
-      </router-link >
-      
-      <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit" @click="changeUserState"
-        >
-          {{ auth ? 'Выйти' : 'Войти' }}
-        </button> -->
-    </form>
+    
+
   </div>
+  <div class="is-logged">
+      <form class="form-inline my-2 my-lg-0" v-if="!auth">
+        <router-link 
+          class="btn btn-outline-success my-2 my-sm-0" 
+          type="submit"
+          :to="$router.resolve({name: 'login'}).href"
+          >Войти
+        </router-link >
+      </form>
+      <form class="form-inline my-2 my-lg-0" v-else>
+        <div class="nav-item dropdown">
+          <button 
+          class="btn btn-default dropdown-toggle" 
+          type="button" 
+          data-toggle="dropdown"
+          >Привет, {{ email }}
+          <span class="caret"></span>
+          </button>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+            <button
+              class="btn nav-link"
+              type="submit"
+              @click="handleLogout"
+              >Выйти
+            </button >
+            <!-- <button
+              class="btn btn-outline-success my-2 my-sm-0 pull-right nav-link"
+              type="submit"
+              @click="handleLogout"
+              >Выйти
+            </button > -->
+          </div>
+        </div>
+        <!-- <button
+          class="btn btn-outline-success my-2 my-sm-0 pull-right"
+          type="submit"
+          @click="handleLogout"
+          >Выйти
+        </button > -->
+
+      </form>
+    </div>
 </nav>
 </template>
 
@@ -102,60 +134,45 @@ export default {
   data() {
     return {
       auth: false,
-      access: [],
+      role: "",
+      email: "",
       departments: [],
       url: "http://localhost:3001"
     }
   },
   async created() {
-    this.auth = localStorage.getItem('auth') !== null
-    this.access = JSON.parse(localStorage.getItem('access'))
-
-    this.departments = await request(`${this.url}/api/departments`)
-    localStorage.setItem('departments', JSON.stringify(this.departments))
+    if (localStorage.getItem('jwt') !== null) {
+      this.auth = true
+      this.role = localStorage.getItem('role')
+      this.email = JSON.parse(localStorage.getItem('user')).email
+    }
+    
+    // this.access = JSON.parse(localStorage.getItem('access'))
+    // this.departments = await request(`${this.url}/api/departments`)
+    // localStorage.setItem('departments', JSON.stringify(this.departments))
   },
   methods: {
-    changeUserState() {
-      if (this.auth) {
-        localStorage.removeItem('auth')
-        this.$router.push({ name: 'main'})
-      } else {
-        localStorage.setItem('auth', true)
-        this.auth = true
-      }
+    handleLogout (){
+      localStorage.removeItem('jwt')
+      localStorage.removeItem('access')
+      localStorage.removeItem('role')
+      this.$router.push('/')
     }
+    // changeUserState() {
+    //   if (this.auth) {
+    //     localStorage.removeItem('auth')
+    //     this.$router.push({ name: 'main'})
+    //   } else {
+    //     localStorage.setItem('auth', true)
+    //     this.auth = true
+    //   }
+    // }
   },
   async mounted() {
     // this.departments = await request(`${this.url}/api/departments`)
     // localStorage.setItem('departments', this.departments)
   }
 
-}
-
-const request = async (url, method="GET", data=null) => {
-    try {
-        const headers = {}
-        const mode = 'cors'
-        let body
-        if(data){
-            headers['Content-Type'] = 'application/json'
-            headers['Access-Control-Allow-Origin'] = '*',
-            headers['Access-Control-Allow-Methods'] = 'GET, POST',
-            headers['Access-Control-Allow-Headers'] = 'Content-Type',
-            headers['Access-Control-Max-Age'] = '3600'
-            body = JSON.stringify(data)
-        }
-
-        const response = await fetch(url, {
-            method,
-            mode,
-            headers,
-            body
-        })
-        return await response.json()
-    } catch (e){
-        console.warn('Errorinio: ', e.message)
-    }
 }
 </script>
 

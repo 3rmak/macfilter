@@ -34,7 +34,7 @@
             >{{ department.name }}</option> -->
             <option
             v-for="department in departments"
-            :key="department.name"
+            :key="department.name" 
             :value="department._id"
             >{{ department.name }}
             </option>
@@ -46,7 +46,12 @@
         </div>
         <div v-else>
           <select class="form-control" id="access" v-model="userForm.access">
-            <option v-for="department in departments" :key="department">{{ department.name }}</option>
+            <option 
+            v-for="department in departments" 
+            :key="department.name" 
+            :value="department._id"
+            >{{ department.name }}
+            </option>
           </select>
         </div>
       </div>
@@ -132,6 +137,7 @@ export default {
   },
   mounted (){
     this.departments = JSON.parse(localStorage.getItem('departments'))
+    console.log("this.departments", this.departments)
   }
 }
 </script>

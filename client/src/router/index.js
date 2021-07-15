@@ -66,13 +66,13 @@ export default new VueRouter({
           path: ':id',
           name: 'departmentPage',
           component: DepartmentPage,
-          beforeEnter: (to, from, next) => {
-            if(localStorage.getItem('auth')) {
-              next()
-            } else {
-              next({ name: 'departments' })
-            }
-          }
+          // beforeEnter: (to, from, next) => {
+          //   if(localStorage.getItem('auth')) {
+          //     next()
+          //   } else {
+          //     next({ name: 'departments' })
+          //   }
+          // }
         },
         {
           path: '*/*',

@@ -1,10 +1,10 @@
 <template>
   <div class="department-list">
-    <div class="card-columns">
+    <div class="row align-items-center">
       <department-card
         class="department-card"
         v-for="department in departments" 
-        :key="department.id" 
+        :key="department._id" 
         :department="department">
         
       </department-card>
@@ -16,15 +16,29 @@
 
 <script>
 import DepartmentCard from '../components/DepartmentCard'
+import request from '../assets/scripts/request'
 
 export default {
   components: { DepartmentCard },
-  props: {
-    departments: Array,
-    default: () => []
-  }  
+  data (){
+    return {
+      url: "http://localhost:3001",
+      departments: []
+    }
+  },
+  async created (){
+    const userAccessDepartments = JSON.parse(localStorage.getItem('access'))
+    if(typeof userAccessDepartments === "string"){
+      this.departments.push(await request(`${this.url}/api/departments/${userAccessDepartments}`))
+    }
+    else if(typeof userAccessDepartments === "object"){
+      await userAccessDepartments.map(async(cur)=> {
+      this.departments.push(await request(`${this.url}/api/departments/${cur}`)) 
+      })
+    }
+    
+  }
 }
-
 </script>
 <style scoped>
   .department-list {

@@ -7,12 +7,15 @@
         <div class="form-group mb-3">
           <label for="type">Тип устройства</label>
           <select class="form-control" id="type" v-model="form.type" required>
+            <option>Компьютер</option>
+            <option>Принтер</option>
+            <option>IP-телефон</option>
+            <option>Видеонаблюдение</option>
+            <option>СКУД</option>
             <option>Смартфон</option>
             <option>Планшет</option>
             <option>Ноутбук</option>
-            <option>Принтер</option>
-            <option>IP-телефон</option>
-            <option>ПК</option>
+            <hr />
             <option>Другое</option>
           </select>
         </div>
@@ -74,6 +77,7 @@
 <script>
 
 import Navbar from '../components/Navbar'
+import request from '../assets/scripts/request'
 
 export default ({
   components: {Navbar},
@@ -95,9 +99,15 @@ export default ({
   },
   methods: {
     async createDevice(){
-            const {...device} = this.form
-            await request(`${this.url}/api/devices`, "POST", device)
-            this.devices = await request(`${this.url}/api/devices`)
+      const {...device} = this.form
+      const response = await request(`${this.url}/api/devices`, "POST", device)
+      this.devices = await request(`${this.url}/api/devices`)
+      await this.$swal({text: response.message})
+        .then(function(isConfirm) {
+            if (isConfirm) {
+              location.reload()
+            }
+          })
     }
   },
   async created (){
@@ -105,30 +115,5 @@ export default ({
   }
 })
 
-const request = async (url, method="GET", data=null) => {
-    try {
-        const headers = {}
-        const mode = 'cors'
-        let body
-        if(data){
-            headers['Content-Type'] = 'application/json'
-            headers['Access-Control-Allow-Origin'] = '*',
-            headers['Access-Control-Allow-Methods'] = 'GET, POST',
-            headers['Access-Control-Allow-Headers'] = 'Content-Type',
-            headers['Access-Control-Max-Age'] = '3600'
-            body = JSON.stringify(data)
-        }
-
-        const response = await fetch(url, {
-            method,
-            mode,
-            headers,
-            body
-        })
-        return await response.json()
-    } catch (e){
-        console.warn('Errorinio: ', e.message)
-    }
-}
 
 </script>
