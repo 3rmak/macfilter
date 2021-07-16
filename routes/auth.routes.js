@@ -14,6 +14,7 @@ router.use(
 router.post(
     '/api/auth/register',
     [     
+        passport.authenticate('jwt', { session: false }),
         check('email', 'email').isEmail(),
         check('password', 'pass').exists(),
         check('role', 'role').exists(),

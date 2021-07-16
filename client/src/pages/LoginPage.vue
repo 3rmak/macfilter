@@ -43,14 +43,13 @@ export default {
       loginForm: {
         email: '',
         password: '',
-      },
-      url: "http://localhost:3001",
+      }
     }
   },
   methods: {
     async login (){
       const user = {...this.loginForm}
-      const response = await request(`${this.url}/api/auth/login`, "POST", user)
+      const response = await request('/api/auth/login', "POST", user)
       console.log("response", response)
       await this.$swal({text: response.message})
         .then(function(isConfirm) {

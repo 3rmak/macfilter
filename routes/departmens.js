@@ -1,19 +1,31 @@
-const {Router} = require('express')
-const router = Router()
-const DepartmentsController = require('../controllers/department')
-const cors = require('cors')
+const { Router } = require("express");
+const router = Router();
+const passport = require('passport')
+const DepartmentsController = require("../controllers/department");
+const cors = require("cors");
 
 router.use(
   cors({
-      origin: "*",
+    origin: "*",
   })
-)
+);
 
-router.get('/api/departments', DepartmentsController.getAll)
+router.get(
+  "/api/departments",
+  passport.authenticate("jwt", { session: false }),
+  DepartmentsController.getAll
+);
 
-router.get('/api/departments/:id', DepartmentsController.get)
+router.get(
+  "/api/departments/:id",
+  passport.authenticate("jwt", { session: false }),
+  DepartmentsController.get
+);
 
-router.post('/api/departments', DepartmentsController.post)
+router.post(
+  "/api/departments",
+  passport.authenticate("jwt", { session: false }),
+  DepartmentsController.post
+);
 
-
-module.exports = router
+module.exports = router;

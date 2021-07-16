@@ -86,8 +86,7 @@ export default {
         "admin": "Администратор",
       },
       departments: [],
-      re_password: "",
-      url: "http://localhost:3001",
+      re_password: ""
     }
   },
   methods: {
@@ -104,7 +103,7 @@ export default {
           })
         }
         else{
-          const response = await request(`${this.url}/api/auth/register`, "POST", user)
+          const response = await request('/api/auth/register', "POST", user)
           console.log(response.message)
           this.$swal({
             text: response.message, 

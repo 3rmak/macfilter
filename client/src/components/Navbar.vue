@@ -136,8 +136,7 @@ export default {
       auth: false,
       role: "",
       email: "",
-      departments: [],
-      url: "http://localhost:3001"
+      departments: []
     }
   },
   async created() {

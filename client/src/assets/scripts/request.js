@@ -1,20 +1,21 @@
 const request = async (url, method="GET", data=null) => {
   try {
-      const headers = {}
+      const baseURL = "http://localhost:3001"
+      const headers = {
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Methods': 'GET, POST',
+        'Access-Control-Allow-Headers': 'Content-Type',
+        'Access-Control-Max-Age': '3600',
+        'Authorization': 'Bearer ' + localStorage.getItem('jwt'),
+      }
       const mode = 'cors'
       let body
       if(data){
-          headers['Content-Type'] = 'application/json'
-          headers['Access-Control-Allow-Origin'] = '*',
-          headers['Access-Control-Allow-Methods'] = 'GET, POST',
-          headers['Access-Control-Allow-Headers'] = 'Content-Type',
-          headers['Access-Control-Max-Age'] = '3600'
-          headers['Authorization'] = 'Bearer' + localStorage.getItem('jwt')
           body = JSON.stringify(data)
-          console.log("Body",body)
       }
-
-      const response = await fetch(url, {
+      console.log("headers", headers)
+      const response = await fetch(`${baseURL}${url}`, {
           method,
           mode,
           headers,

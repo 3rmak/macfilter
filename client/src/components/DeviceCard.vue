@@ -18,13 +18,12 @@
 
   <div class="device-card">
     <div class="card box-shadow mx-auto my-5" style="width: 18rem">
-      <div class="card-header" :style="{background: device.allowed ? '#4EE475' : '#CD5C5C'}">
+      <div
+        class="card-header"
+        :style="{ background: device.allowed ? '#4EE475' : '#CD5C5C' }"
+      >
         <div class="logo-container">
-          <img
-            :src="getLogoPath"
-            class="card-img-top"
-            alt="logo"
-          />
+          <img :src="getLogoPath" class="card-img-top" alt="logo" />
         </div>
         <router-link :to="$router.resolve({ name: 'main' }).href">
           <div class="wrapper pencil">
@@ -35,7 +34,7 @@
         <div class="card-title">
           <h5>{{ device.type }}</h5>
         </div>
-        <div class="content ">
+        <div class="content">
           <p class="card-text"><b>Владелец:</b> {{ device.owner }}</p>
           <p class="card-text"><b>Мак адресс:</b> {{ device.mac }}</p>
           <p class="card-text">
@@ -68,8 +67,7 @@
 </template>
 
 <script>
-
-import LogoNames from '../assets/scripts/NameDevices'
+import LogoNames from "../assets/scripts/NameDevices";
 
 export default {
   props: {
@@ -77,18 +75,28 @@ export default {
       type: Object,
     },
   },
-  data (){
+  data() {
     return {
-      logoNames: LogoNames
-    }
+      logoNames: LogoNames,
+    };
   },
   computed: {
-    getLogoPath (){
-      const path = this.logoNames[this.device.type]
-      console.log('path', path)
-      return path
-    }
-  }
+    getLogoPath() {
+      const path = this.logoNames[this.device.type];
+      console.log("path", path);
+      return path;
+    },
+  },
+  methods: {
+    allowDevice() {
+      // const device = this.devices.find((cur) => cur._id === id);
+      this.device.allowed = true;
+    },
+    disallowDevice() {
+      // const device = this.devices.find((cur) => cur._id === id);
+      this.device.allowed = false;
+    },
+  },
 };
 </script>
 
@@ -145,7 +153,6 @@ h5 {
   width: 55px;
   float: left;
   transition: all 0.5s ease-in-out;
-
 }
 .pencil {
   top: 16rem;
@@ -160,14 +167,13 @@ h5 {
   overflow: hidden;
   display: flex;
   justify-content: center;
-  
 }
 .wrapper.pencil img {
   width: 100%;
   height: 100%;
 }
-.card :hover .pencil{
+.card :hover .pencil {
   transform: rotate(-360deg);
-  box-shadow: #3D7D7D inset;
+  box-shadow: #3d7d7d inset;
 }
 </style>

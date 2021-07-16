@@ -19,32 +19,8 @@
 
 <script>
 import Navbar from '../components/Navbar'
+import request from '../assets/scripts/request'
 
-const request = async (url, method="GET", data=null) => {
-    try {
-        const headers = {}
-        const mode = 'cors'
-        let body
-        if(data){
-            headers['Content-Type'] = 'application/json'
-            headers['Access-Control-Allow-Origin'] = '*',
-            headers['Access-Control-Allow-Methods'] = 'GET, POST',
-            headers['Access-Control-Allow-Headers'] = 'Content-Type',
-            headers['Access-Control-Max-Age'] = '3600'
-            body = JSON.stringify(data)
-        }
-
-        const response = await fetch(url, {
-            method,
-            mode,
-            headers,
-            body
-        })
-        return await response.json()
-    } catch (e){
-        console.warn('Errorinio: ', e.message)
-    }
-}
 
 export default {
   components: {
@@ -57,15 +33,14 @@ export default {
                 name: '',
                 devices: [],
                 listId: ''
-      },
-      url: "http://localhost:3001"
+      }
     }
   },
   methods: {
     async createDepartment(){
       const {...department} = this.departForm
-      await request(`${this.url}/api/departments`, "POST", department)
-      this.departments = await request(`${this.url}/api/departments`)
+      await request('/api/departments', "POST", department)
+      this.departments = await request('/api/departments')
     }
   }
 }

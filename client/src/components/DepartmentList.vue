@@ -22,18 +22,17 @@ export default {
   components: { DepartmentCard },
   data (){
     return {
-      url: "http://localhost:3001",
       departments: []
     }
   },
   async created (){
     const userAccessDepartments = JSON.parse(localStorage.getItem('access'))
     if(typeof userAccessDepartments === "string"){
-      this.departments.push(await request(`${this.url}/api/departments/${userAccessDepartments}`))
+      this.departments.push(await request(`/api/departments/${userAccessDepartments}`))
     }
-    else if(typeof userAccessDepartments === "object"){
-      await userAccessDepartments.map(async(cur)=> {
-      this.departments.push(await request(`${this.url}/api/departments/${cur}`)) 
+    else if(Array.isArray(userAccessDepartments)){
+      userAccessDepartments.map(async(cur)=> {
+      this.departments.push(await request(`/api/departments/${cur}`)) 
       })
     }
     
