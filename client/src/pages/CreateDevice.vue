@@ -93,15 +93,14 @@ export default ({
         comment: '',
         addingDate: (new Date())
       },
-      url: "http://localhost:3001",
       departments: []
     }
   },
   methods: {
     async createDevice(){
       const {...device} = this.form
-      const response = await request(`${this.url}/api/devices`, "POST", device)
-      this.devices = await request(`${this.url}/api/devices`)
+      const response = await request('/api/devices', "POST", device)
+      this.devices = await request('/api/devices')
       await this.$swal({text: response.message})
         .then(function(isConfirm) {
             if (isConfirm) {
@@ -111,7 +110,7 @@ export default ({
     }
   },
   async created (){
-    this.departments = await request(`${this.url}/api/departments`)
+    this.departments = await request('/api/departments')
   }
 })
 

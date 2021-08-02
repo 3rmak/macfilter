@@ -5,6 +5,7 @@ const passport = require('passport')
 const cors = require('cors');
 const authRoutes = require('./routes/auth.routes');
 const deviceRoutes = require("./routes/devices");
+const userRoutes = require("./routes/users");
 const departmentRoutes = require("./routes/departmens");
 const config = require('config')
 require("dotenv").config();
@@ -30,6 +31,7 @@ async function start() {
 
     app.use(express.json({ extended: true }))
     app.use(deviceRoutes);
+    app.use(userRoutes);
     app.use(departmentRoutes);
     app.use(authRoutes)
     app.use(cors())
