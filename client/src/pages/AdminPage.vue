@@ -15,7 +15,7 @@
             </div>
             <div class="card-footer">
               <router-link :to="$router.resolve({name: 'createUser'}).href" class="btn btn-primary mb-2">Добавить нового юзера</router-link>
-              <router-link :to="$router.resolve({name: 'createUser'}).href" class="btn btn-primary mb-2">Изменить параметры для юзера</router-link>
+              <router-link :to="$router.resolve({name: 'editUser'}).href" class="btn btn-primary mb-2">Изменить параметры для юзера</router-link>
             </div>
           </div>
           <div class="card" style="width: 21rem;">

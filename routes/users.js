@@ -15,5 +15,10 @@ router.get(
     passport.authenticate("jwt", { session: false }),
     UsersController.getAll
     )
+router.patch(
+  '/api/users',
+  passport.authenticate("jwt", { session: false }),
+  UsersController.patch
+  )
 
 module.exports = router
