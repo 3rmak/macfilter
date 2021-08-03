@@ -31,13 +31,15 @@ module.exports = {
       await item.save()
 
       const userIdList = req.body.userIdList
-      for (user in userIdList){
-        
+      for (let id of userIdList){
+        const userAccess = await User.findById(id, 'access').exec()
+        const dbUser = await User.findByIdAndUpdate(id, { access: [...userAccess.access, item._id.toString()] })
+        await dbUser.save()
       }
 
       res.header("Access-Control-Allow-Origin", "*")
       res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
-      res.status(201).json({department, message: 'Филиал был успешно добавлен'})
+      res.status(201).json({department, message: 'Филиал был успешно добавлен. Права пользователю добавлены'})
     } catch (error) {
       res.status(500).json({message: 'Ошибка. Новый филиал не был добавлен'})
     }

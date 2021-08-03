@@ -11,7 +11,7 @@
           <div class="userAccess mt-4">
             <label for="access" class="form-label">Открыть доступ пользователям:</label>
             <div class="form-check" v-for="user in users" :key="user._id" id="access">
-              <input class="form-check-input" type="checkbox" id="user" :value="user._id" v-model="userIdList">
+              <input class="form-check-input" type="checkbox" id="user" :value="user._id" v-model="departForm.userIdList">
               <label class="form-check-label" :for="user._id">{{user.email}}</label>            
             </div>
           </div>
