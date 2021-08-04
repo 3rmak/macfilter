@@ -16,6 +16,12 @@ router.get(
   DeviceController.getAll
 );
 
+router.get(
+  "/api/devices/:id",
+  passport.authenticate("jwt", { session: false }),
+  DeviceController.getFromDepartment
+);
+
 router.post(
   "/api/devices",
   passport.authenticate("jwt", { session: false }),

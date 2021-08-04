@@ -25,10 +25,35 @@
         <div class="logo-container">
           <img :src="getLogoPath" class="card-img-top" alt="logo" />
         </div>
-        <router-link :to="$router.resolve({ name: 'main' }).href">
+        <!-- <router-link :to="$router.resolve({ name: 'main' }).href">
           <div class="wrapper pencil">
             <img src="../assets/images/pencil-removebg-preview.png" /></div
-        ></router-link>
+        ></router-link> -->
+        <div class="wrapper pencil">
+          <button type="button" class="btn" @click="showModal = true">
+            <img src="../assets/images/pencil-removebg-preview.png" />
+          </button>
+          <transition name="fade" appear>
+            <div
+              class="modal-overlay"
+              v-if="showModal"
+              @click="showModal = false"
+            ></div>
+          </transition>
+          <transition name="slide" appear>
+            <div class="modal" v-if="showModal">
+              <h1>Lorem Ipsum</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatem provident explicabo accusamus laudantium voluptatum
+                nobis sed nesciunt neque possimus molestiae?
+              </p>
+              <button class="button" @click="showModal = false">
+                Close Modal
+              </button>
+            </div>
+          </transition>
+        </div>
       </div>
       <div class="card-body">
         <div class="card-title">
@@ -78,6 +103,7 @@ export default {
   data() {
     return {
       logoNames: LogoNames,
+      showModal: false,
     };
   },
   computed: {
@@ -89,11 +115,9 @@ export default {
   },
   methods: {
     allowDevice() {
-      // const device = this.devices.find((cur) => cur._id === id);
       this.device.allowed = true;
     },
     disallowDevice() {
-      // const device = this.devices.find((cur) => cur._id === id);
       this.device.allowed = false;
     },
   },
@@ -163,7 +187,7 @@ h5 {
 
   border: 2px solid rgb(189, 192, 192);
   color: white;
-  font-size: 3rem;
+  font-size: 5rem;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -175,5 +199,29 @@ h5 {
 .card :hover .pencil {
   transform: rotate(-360deg);
   box-shadow: #3d7d7d inset;
+}
+.modal-overlay {
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ z-index: 98;
+ background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal {
+ position: fixed;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ z-index: 99;
+ 
+ width: 100%;
+ max-width: 400px;
+ background-color: #FFF;
+ border-radius: 16px;
+ 
+ padding: 25px;
 }
 </style>

@@ -13,6 +13,19 @@ module.exports = {
         console.warn(e)
     }
   },
+  getFromDepartment: async ({params: id, req, res}) => {
+    try {
+        const idDevices = (Department.findById(id)).devices
+        const devices = idDevices.map((val)=>{
+            Device.findById(val)
+        })
+        res.header("Access-Control-Allow-Origin", "*")
+        res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
+        res.status(200).json({devices, message:"Устройства по заданому департаменту получены успешно!"}) 
+    } catch (error) {
+        res.status(500).json({message: "Получить доступ к устройствам по заданому департаменту не удалось :("})
+    }
+  },
   post: async (req, res) => {
     try {
         const device = await {...req.body, id: v4()}

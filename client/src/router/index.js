@@ -4,7 +4,8 @@ import MainPage from '../pages/MainPage'
 import DepartmentsLayout from '../pages/DepartmentsLayout'
 import AllDepartmentsPage from '../pages/AllDepartmentsPage'
 import DepartmentPage from '../pages/DepartmentPage'
-import EditUserRights from '../pages/EditUserRights'
+import EditUserPage from '../pages/EditUserPage'
+import EditDevicePage from '../pages/EditDevicePage'
 
 import CreateDevice from '../pages/CreateDevice'
 import CreateDepartment from '../pages/CreateDepartment'
@@ -46,7 +47,12 @@ export default new VueRouter({
     {
       path: '/editUser',
       name: 'editUser',
-      component: EditUserRights
+      component: EditUserPage
+    },
+    {
+      path: '/editDevice',
+      name: 'editDevice',
+      component: EditDevicePage
     },
     {
       path: '/createDevice',

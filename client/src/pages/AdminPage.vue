@@ -36,7 +36,7 @@
             </div>
             <div class="card-footer">
               <router-link :to="$router.resolve({name: 'createDevice'}).href" class="btn btn-primary mb-2">Добавить устройство</router-link>
-              <router-link :to="$router.resolve({name: 'createDevice'}).href" class="btn btn-primary mb-2">Редактировать устройство</router-link>
+              <router-link :to="$router.resolve({name: 'editDevice'}).href" class="btn btn-primary mb-2">Редактировать устройство</router-link>
             </div>
           </div>
         </div>
