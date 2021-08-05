@@ -3,64 +3,32 @@
     <navbar />
     <div class="header">
       <h1>Main Page</h1>
-      <button
-        type="button"
-        class="btn btn-primary"
-        data-bs-toggle="modal"
-        data-bs-target="#staticBackdrop"
-      >
-        Launch static backdrop modal
-      </button>
-      <div
-        class="modal fade"
-        id="staticBackdrop"
-        data-bs-backdrop="static"
-        data-bs-keyboard="false"
-        tabindex="-1"
-        aria-labelledby="staticBackdropLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">...</div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                Close
-              </button>
-              <button type="button" class="btn btn-primary">Understood</button>
-            </div>
-          </div>
-        </div>
+
+      <div class="container" v-for="modal in modals" :key="modal">
+        <button class="btn btn-success" @click="showModal(modal)">Show modal {{modal}}</button>
+        <modal :name="modal">This is an {{modal}}</modal>
       </div>
+
     </div>
   </div>
 </template>
 
 <script>
 import Navbar from "../components/Navbar";
-
 export default {
   data() {
     return {
-      showModal: false,
+      modals: ['60db2269cf2628063445a57d', '60db421084972f12d434b6b5']
     };
   },
   components: {
     Navbar,
   },
+  methods: {
+    showModal(m) {
+      this.$modal.show(m)
+    }
+  }
 };
 </script>
 

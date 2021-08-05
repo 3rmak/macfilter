@@ -78,6 +78,7 @@
 
 import Navbar from '../components/Navbar'
 import request from '../assets/scripts/request'
+import types from '../assets/scripts/request'
 
 export default ({
   components: {Navbar},
@@ -93,6 +94,7 @@ export default ({
         comment: '',
         addingDate: (new Date())
       },
+      types,
       departments: []
     }
   },
@@ -111,6 +113,7 @@ export default ({
   },
   async created (){
     this.departments = await request('/api/departments')
+    console.log("this.types", this.types)
   }
 })
 

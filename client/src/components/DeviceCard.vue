@@ -27,33 +27,17 @@
         </div>
         <!-- <router-link :to="$router.resolve({ name: 'main' }).href">
           <div class="wrapper pencil">
-            <img src="../assets/images/pencil-removebg-preview.png" /></div
-        ></router-link> -->
-        <div class="wrapper pencil">
-          <button type="button" class="btn" @click="showModal = true">
             <img src="../assets/images/pencil-removebg-preview.png" />
-          </button>
-          <transition name="fade" appear>
-            <div
-              class="modal-overlay"
-              v-if="showModal"
-              @click="showModal = false"
-            ></div>
-          </transition>
-          <transition name="slide" appear>
-            <div class="modal" v-if="showModal">
-              <h1>Lorem Ipsum</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptatem provident explicabo accusamus laudantium voluptatum
-                nobis sed nesciunt neque possimus molestiae?
-              </p>
-              <button class="button" @click="showModal = false">
-                Close Modal
-              </button>
-            </div>
-          </transition>
-        </div>
+          </div>
+        </router-link> -->
+        <a type="button" class="logo-container" @click="showModal">
+          <div class="wrapper pencil">
+            <img src="../assets/images/pencil-removebg-preview.png" />
+          </div>
+        </a>
+        <!-- <button class="btn btn-secondary wrapper pencil" @click="showModal">Edit</button> -->
+        <!-- Modal  -->
+        
       </div>
       <div class="card-body">
         <div class="card-title">
@@ -95,6 +79,7 @@
 import LogoNames from "../assets/scripts/NameDevices";
 
 export default {
+  components: {  },
   props: {
     device: {
       type: Object,
@@ -103,7 +88,6 @@ export default {
   data() {
     return {
       logoNames: LogoNames,
-      showModal: false,
     };
   },
   computed: {
@@ -120,6 +104,9 @@ export default {
     disallowDevice() {
       this.device.allowed = false;
     },
+    showModal() {
+      this.$emit("showModal", this.device._id)
+    }
   },
 };
 </script>
@@ -200,28 +187,5 @@ h5 {
   transform: rotate(-360deg);
   box-shadow: #3d7d7d inset;
 }
-.modal-overlay {
- position: absolute;
- top: 0;
- left: 0;
- right: 0;
- bottom: 0;
- z-index: 98;
- background-color: rgba(0, 0, 0, 0.3);
-}
 
-.modal {
- position: fixed;
- top: 50%;
- left: 50%;
- transform: translate(-50%, -50%);
- z-index: 99;
- 
- width: 100%;
- max-width: 400px;
- background-color: #FFF;
- border-radius: 16px;
- 
- padding: 25px;
-}
 </style>

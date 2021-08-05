@@ -1,45 +1,60 @@
 <template>
   <div class="device-edit-menu">
-    <transition name="slide" appear>
-      <div class="modal" v-if="showModal">
-      <h1>Lorem Ipsum</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem provident explicabo accusamus laudantium voluptatum nobis sed nesciunt neque possimus molestiae?</p>
-      <button class="button" @click="showModal = false">
-        Close Modal
-      </button>
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>Редактирование устройства</h5>
       </div>
-    </transition>
+      <div class="modal-body">
+        <p class="card-text">
+          <b>Дата добавления: {{ new Date(device.addingDate) }}</b>
+        </p>
+        <p class="card-text"><b>Мак адресс: {{ device.mac }}</b></p>
+        <p class="card-text"><b>Владелец:</b> <input type="text" value="setDefaultOwner()" :placeholder="device.owner" v-model="device.owner"></p>
+        <p class="card-text"><b>Тип:</b>
+          <select class="type-selection" v-model="device.type">
+            <option selected disabled hidden>{{device.type}}</option> 
+            <option>Компьютер</option>
+            <option>Принтер</option>
+            <option>IP-телефон</option>
+            <option>Видеонаблюдение</option>
+            <option>СКУД</option>
+            <option>Смартфон</option>
+            <option>Планшет</option>
+            <option>Ноутбук</option>
+            <hr />
+            <option>Другое</option>
+          </select>
+        </p>
+        <hr/>
+        <p class="card-text">Комментарий: 
+          <input :placeholder="device.comment" v-model="device.comment">
+        </p>
+      </div>
+      <div class="modal-footer pt-0">
+        <button class="btn btn-success" @click="saveChanges">Сохранить изменения</button>
+        <button class="btn btn-secondary" @click="$emit('close')">Закрыть</button>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
+// import request from '../assets/scripts/request'
 export default {
+  props: {
+    device: {
+      type: Object,
+    },
+  },
+  computed: {
+    setDefaultOwner() {
+      return this.device.owner
+    }
+  },
+  methods: {
+    saveChanges() {
+      console.log('this.device', this.device)
+    }
+  }
 };
 </script>
-
-<style>
-.modal-overlay {
- position: absolute;
- top: 0;
- left: 0;
- right: 0;
- bottom: 0;
- z-index: 98;
- background-color: rgba(0, 0, 0, 0.3);
-}
-
-.modal {
- position: fixed;
- top: 50%;
- left: 50%;
- transform: translate(-50%, -50%);
- z-index: 99;
- 
- width: 100%;
- max-width: 400px;
- background-color: #FFF;
- border-radius: 16px;
- 
- padding: 25px;
-}
- </style>

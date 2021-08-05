@@ -6,7 +6,13 @@
         <div class="row justify-content-around">
           <div v-for="device in devices" :key="device">
             <div class="col-sm-4">
-              <device-card :device="device" />
+              <device-card :device="device" @showModal="showModal" />
+              <modal :name="device._id"
+                     :width="600"
+                     :height="'auto'"
+              >
+                <edit-device-menu :device="device"/>
+              </modal>
             </div>
           </div>
         </div>
@@ -29,6 +35,7 @@
 
 <script>
 import DeviceCard from "../components/DeviceCard";
+import EditDeviceMenu from './EditDeviceMenu';
 import request from "../assets/scripts/request";
 
 export default {
@@ -37,6 +44,7 @@ export default {
   },
   components: {
     DeviceCard,
+    EditDeviceMenu
   },
   data() {
     return {
@@ -72,7 +80,14 @@ export default {
         });
       }
     },
+    showModal(id) {
+      console.log("id", id)
+      this.$modal.show(id)
+    }
   },
+  
 };
 </script>
-<style scoped></style>
+<style scoped>
+
+</style>
