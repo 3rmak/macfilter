@@ -56,19 +56,28 @@ module.exports = {
     }
   },
   patch: async(req, res) => {
-    const devices = {...req.body}
     try {
+    const devices = req.body
+    res.header("Access-Control-Allow-Origin", "*")
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
+
+    // if comes array -> change only allowed property
+    if(Array.isArray(devices)){
         Object.values(devices).map(cur => {
+            // console.log('cur', cur)
             Device.updateOne({_id: cur._id}, {
                 $set: {
                     allowed: cur.allowed
                 }
-
             }).exec()
         })
-        res.header("Access-Control-Allow-Origin", "*")
-        res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
-        res.status(200).json(devices)
+    }
+    // if comes only one item -> change all his properties
+    else if(typeof devices === 'object' && !Array.isArray(devices)) {
+        console.log('here')
+        await Device.findByIdAndUpdate({_id: devices._id}, {$set: {...devices} })
+    }   
+        res.status(200).json({devices, message: "Изменения успешно сохранены!"})
     } catch (e) {
         console.log('Error: ', e)
     }

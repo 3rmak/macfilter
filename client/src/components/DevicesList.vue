@@ -62,10 +62,6 @@ export default {
       }
     });
 
-    // const film = films.find(film => film.id == this.$route.params.id)
-    // if (film) {
-    //   this.film = film
-    // }
   },
   methods: {
     async applyChanges() {
@@ -78,6 +74,7 @@ export default {
         this.$swal({ text: "Изменения сохранены!" }).then(() => {
           location.reload();
         });
+      console.log('this.devices', Array.isArray(this.devices))
       }
     },
     showModal(id) {

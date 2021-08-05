@@ -39,7 +39,7 @@
 </template>
 
 <script>
-// import request from '../assets/scripts/request'
+import request from '../assets/scripts/request'
 export default {
   props: {
     device: {
@@ -52,8 +52,19 @@ export default {
     }
   },
   methods: {
-    saveChanges() {
-      console.log('this.device', this.device)
+    async saveChanges() {
+      try {
+        const response = await request('/api/devices', "PATCH", this.device)
+        await this.$swal({text: response.message})
+          .then(()=>{
+            location.reload()
+          })
+      } catch (error) {
+        await this.$swal({text: 'Не удалось применить изменения :('})
+          .then(()=>{
+            location.reload()
+          })
+      }
     }
   }
 };
