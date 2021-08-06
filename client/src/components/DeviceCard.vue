@@ -18,9 +18,11 @@
 
   <div class="device-card">
     <div class="card box-shadow mx-auto my-5" style="width: 18rem">
+      <!-- allowed ? card color = green  -->
       <div
         class="card-header"
-        :style="{ background: device.allowed ? '#4EE475' : '#CD5C5C' }"
+        
+        :style="{ background: device.allowed ? '#3c6' : '#CD5C5C' }"
       >
         <div class="logo-container">
           <img :src="getLogoPath" class="card-img-top" alt="logo" />

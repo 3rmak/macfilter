@@ -32,7 +32,7 @@
       </div>
       <div class="modal-footer pt-0">
         <button class="btn btn-success" @click="saveChanges">Сохранить изменения</button>
-        <button class="btn btn-secondary" @click="$emit('close')">Закрыть</button>
+        <button class="btn btn-secondary" @click="$modal.hide(device._id)">Закрыть</button>
       </div>
     </div>
   </div>

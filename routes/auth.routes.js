@@ -4,6 +4,7 @@ const passport = require('passport')
 const router = Router()
 const cors = require('cors')
 const AuthController = require('../controllers/auth')
+const middlewareACL = require('../middleware/acl')
 
 router.use(
     cors({
@@ -14,14 +15,16 @@ router.use(
 router.post(
     '/api/auth/register',
     [     
+        middlewareACL('admin'),
         passport.authenticate('jwt', { session: false }),
         check('email', 'email').isEmail(),
         check('password', 'pass').exists(),
         check('role', 'role').exists(),
+        
     ],
     // check('email', 'Неверный email').isEmail(),
     // check('password', 'Минимальный пароль 6 символов').isLength({min: 6})
-    AuthController.register
+    AuthController.register,
    )
 
 // /api/auth/login

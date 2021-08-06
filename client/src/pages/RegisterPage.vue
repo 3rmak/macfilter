@@ -157,9 +157,15 @@ export default {
       return true;
     },
   },
-  mounted() {
-    this.departments = JSON.parse(localStorage.getItem("departments"));
-    console.log("this.departments", this.departments);
+  async mounted() {
+    // this.departments = JSON.parse(localStorage.getItem("departments"));
+    // console.log("this.departments", this.departments);
+    try {
+      this.departments = await request('/api/departments')
+    } catch (error) {
+      console.warn('can not get departments list')
+    }
+    
   },
 };
 </script>
