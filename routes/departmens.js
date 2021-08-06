@@ -2,6 +2,7 @@ const { Router } = require("express");
 const router = Router();
 const passport = require('passport')
 const DepartmentsController = require("../controllers/department");
+const middlewareACL = require('../middleware/acl')
 const cors = require("cors");
 
 router.use(
@@ -24,7 +25,10 @@ router.get(
 
 router.post(
   "/api/departments",
-  passport.authenticate("jwt", { session: false }),
+  [
+    middlewareACL('admin'),
+    passport.authenticate("jwt", { session: false })
+  ],
   DepartmentsController.post
 );
 

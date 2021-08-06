@@ -43,7 +43,18 @@ export default {
     },
   },
   async mounted() {
-    this.departments = await request("/api/departments");
+    
+    // this.departments = await request("/api/departments");
+    const userAccessDepartments = JSON.parse(localStorage.getItem('access'))
+    if(typeof userAccessDepartments === "string"){
+      this.departments.push(await request(`/api/departments/${userAccessDepartments}`))
+    }
+    else if(Array.isArray(userAccessDepartments)){
+      userAccessDepartments.map(async(cur)=> {
+      this.departments.push(await request(`/api/departments/${cur}`)) 
+      })
+    }
+    
   },
 };
 </script>

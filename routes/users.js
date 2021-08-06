@@ -1,6 +1,7 @@
 const { Router } = require("express");
 const router = Router();
 const UsersController = require('../controllers/users')
+const middlewareACL = require('../middleware/acl')
 const passport = require('passport')
 const cors = require("cors");
 
@@ -12,12 +13,18 @@ router.use(
 
 router.get(
     '/api/users',
-    passport.authenticate("jwt", { session: false }),
+    [
+      middlewareACL('admin'),
+      passport.authenticate("jwt", { session: false }),
+    ],
     UsersController.getAll
     )
 router.patch(
   '/api/users',
-  passport.authenticate("jwt", { session: false }),
+  [
+    middlewareACL('admin'),
+    passport.authenticate("jwt", { session: false }),
+  ],
   UsersController.patch
   )
 

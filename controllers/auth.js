@@ -69,7 +69,7 @@ module.exports = {
         const token = jwt.sign(
             { userId: user.id },
             config.get('jwtSecret'),
-            { expiresIn: '1h' }
+            { expiresIn: '10s' }
         )
         return res.json({ token, user: user, message: 'Авторизовано'})
 

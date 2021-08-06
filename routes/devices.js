@@ -1,8 +1,10 @@
 const { Router } = require("express");
 const DeviceController = require("../controllers/device");
+const middlewareACL = require('../middleware/acl')
 const passport = require("passport");
 const router = Router();
 const cors = require("cors");
+
 
 router.use(
   cors({
@@ -24,7 +26,10 @@ router.get(
 
 router.post(
   "/api/devices",
-  passport.authenticate("jwt", { session: false }),
+  [
+    middlewareACL('admin'),
+    passport.authenticate("jwt", { session: false }),
+  ],
   DeviceController.post
 );
 
