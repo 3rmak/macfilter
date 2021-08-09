@@ -4,7 +4,7 @@
       <img class="card-img-top" src="../assets/images/logo.png" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title">{{ department.name }}</h5>
-        <p class="card-devices">Устройств: {{ (department.devices).length/2 }}</p>
+        <p class="card-devices">Устройств: {{ (department.devices).length }}</p>
         <router-link :to="$router.resolve({name: 'departmentPage', params: {id: department._id}}).href"
           class="more-info"
         >К устройствам

@@ -1,21 +1,4 @@
 <template>
-  <!-- <div class="card">
-  <div class="card-body"> -->
-  <!-- <h4 class="card-title">{{device.type}}</h4>
-    <p class="card-text"><b>Владелец:</b> {{device.owner}}</p>
-    <p class="card-text"><b>Мак адресс:</b> {{device.mac}}</p>
-    <p class="card-text"><b>Дата добавления:</b> {{device.addingDate}}</p>
-    <div v-if="device.comment">
-        <hr>
-        <p class="text-secondary">{{device.comment}}</p>
-    </div>
-
-    <button class="btn btn-success mr-3" v-on:click="allowDevice(device._id)" :disabled="device.allowed">Разрешить</button>
-    <button class="btn btn-danger" v-on:click="disallowDevice(device._id)" :disabled="!device.allowed">Запретить</button> -->
-  <!--     
-  </div>
-</div> -->
-
   <div class="device-card">
     <div class="card box-shadow mx-auto my-5" style="width: 18rem">
       <!-- allowed ? card color = green  -->

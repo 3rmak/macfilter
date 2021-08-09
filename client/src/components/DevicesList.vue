@@ -7,11 +7,8 @@
           <div v-for="device in devices" :key="device">
             <div class="col-sm-4">
               <device-card :device="device" @showModal="showModal" />
-              <modal :name="device._id"
-                     :width="600"
-                     :height="'auto'"
-              >
-                <edit-device-menu :device="device"/>
+              <modal :name="device._id" :width="600" :height="'auto'">
+                <edit-device-menu :device="device" />
               </modal>
             </div>
           </div>
@@ -35,7 +32,7 @@
 
 <script>
 import DeviceCard from "../components/DeviceCard";
-import EditDeviceMenu from './EditDeviceMenu';
+import EditDeviceMenu from "./EditDeviceMenu";
 import request from "../assets/scripts/request";
 
 export default {
@@ -44,7 +41,7 @@ export default {
   },
   components: {
     DeviceCard,
-    EditDeviceMenu
+    EditDeviceMenu,
   },
   data() {
     return {
@@ -53,38 +50,30 @@ export default {
     };
   },
   async created() {
-    const devices = await request('/api/devices');
+    const devices = await request("/api/devices");
     this.devices = devices.filter((device) => device.department === this.id);
-    const departments = await request('/api/departments');
+    const departments = await request("/api/departments");
     departments.map((cur) => {
       if (cur._id === this.id) {
         this.department = cur.name;
       }
     });
-
   },
   methods: {
     async applyChanges() {
-      const response = await request(
-        '/api/devices',
-        "PATCH",
-        this.devices
-      );
+      const response = await request("/api/devices", "PATCH", this.devices);
       if (response) {
         this.$swal({ text: "Изменения сохранены!" }).then(() => {
           location.reload();
         });
-      console.log('this.devices', Array.isArray(this.devices))
+        console.log("this.devices", Array.isArray(this.devices));
       }
     },
     showModal(id) {
-      console.log("id", id)
-      this.$modal.show(id)
-    }
+      console.log("id", id);
+      this.$modal.show(id);
+    },
   },
-  
 };
 </script>
-<style scoped>
-
-</style>
+<style scoped></style>

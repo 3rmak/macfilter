@@ -5,6 +5,7 @@ const Department = require('../models/Department')
 module.exports = {
   getAll: async (req, res) => {
     try {
+        console.log('id all')
         const devices = await Device.find()
         res.header("Access-Control-Allow-Origin", "*")
         res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
@@ -13,12 +14,14 @@ module.exports = {
         console.warn(e)
     }
   },
-  getFromDepartment: async ({params: id, req, res}) => {
+  getFromDepartment: async ({params: {id}, req, res}) => {
     try {
-        const idDevices = (Department.findById(id)).devices
-        const devices = idDevices.map((val)=>{
-            Device.findById(val)
-        })
+        const department = await Department.findById(id)
+        const depDevices = (department.devices)
+        const devices = []
+        for (val of depDevices){
+            devices.push(await Device.findById(val))
+        }
         res.header("Access-Control-Allow-Origin", "*")
         res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
         res.status(200).json({devices, message:"Устройства по заданому департаменту получены успешно!"}) 
@@ -29,6 +32,7 @@ module.exports = {
   post: async (req, res) => {
     try {
         const device = await {...req.body, id: v4()}
+        console.log('req.body', req.body)
         const item = await new Device({...device})
         item.department = await Department.findOne({ 'name': device.department })
         await item.save()
@@ -74,13 +78,29 @@ module.exports = {
     }
     // if comes only one item -> change all his properties
     else if(typeof devices === 'object' && !Array.isArray(devices)) {
-        console.log('here')
         await Device.findByIdAndUpdate({_id: devices._id}, {$set: {...devices} })
     }   
         res.status(200).json({devices, message: "Изменения успешно сохранены!"})
     } catch (e) {
         console.log('Error: ', e)
     }
+  },
+  delete: async(req, res) => {
+      try {
+        res.header("Access-Control-Allow-Origin", "*")
+        res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
+        const id = req.body
+        const device = await Device.findById(id)
+        const department = await Department.findById(device.department)
+        const depDevices = department.devices
+        depDevices.splice(depDevices.indexOf(id), 1)
+        await department.save()
+        await Device.findByIdAndDelete(id)
+
+        res.status(200).json({message: 'Удалено!'})
+      } catch (error) {
+        res.status(500).json({message: 'Серверная ошибка. Не удалось удалить сведения о пользователе'})
+      }
   }
 }
 

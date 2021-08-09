@@ -16,12 +16,8 @@ import LoginPage from '../pages/LoginPage'
 import AdminPage from '../pages/AdminPage'
 
 import NotFound from '../pages/404'
-// import AllFilmsPage from '../pages/AllFilmsPage'
-// import FilmPage from '../pages/FilmPage'
 
-// import FilmsLayout from '../pages/FilmsLayout'
-
-export default new VueRouter({
+const router = new VueRouter({
   mode: 'history',
   routes: [
     {
@@ -78,13 +74,6 @@ export default new VueRouter({
           path: ':id',
           name: 'departmentPage',
           component: DepartmentPage,
-          // beforeEnter: (to, from, next) => {
-          //   if(localStorage.getItem('auth')) {
-          //     next()
-          //   } else {
-          //     next({ name: 'departments' })
-          //   }
-          // }
         },
         {
           path: '*/*',
@@ -92,35 +81,6 @@ export default new VueRouter({
         },
     ]
     },
-    
-    // {
-    //   path: '/films',
-    //   name: 'filmsLayout',
-    //   component: FilmsLayout,
-    //   children: [
-    //     {
-    //       path: '',
-    //       name: 'films',
-    //       component: AllFilmsPage
-    //     },
-    //     {
-    //       path: ':id',
-    //       name: 'filmPage',
-    //       component: FilmPage,
-    //       beforeEnter: (to, from, next) => {
-    //         if(localStorage.getItem('auth')) {
-    //           next()
-    //         } else {
-    //           next({ name: 'films' })
-    //         }
-    //       }
-    //     },
-    //     {
-    //       path: '*/*',
-    //       redirect: { name: 'films' }
-    //     },
-    //   ]
-    // },
     {
       path: '*',
       name: 'notFound',
@@ -128,3 +88,13 @@ export default new VueRouter({
     },
   ]
 })
+
+//navigation guard
+// if not authenticated redirect to 'login'
+// router.beforeEach((to, from, next) => {
+//   const isAuthenticated = localStorage.getItem('jwt')
+//   if (to.name !== 'login' && to.name !== 'main' && !isAuthenticated) next({ name: 'login' })
+//   else next()
+// })
+
+export default router

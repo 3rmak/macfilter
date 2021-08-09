@@ -20,7 +20,7 @@ router.get(
 
 router.get(
   "/api/devices/:id",
-  passport.authenticate("jwt", { session: false }),
+  // passport.authenticate("jwt", { session: false }),
   DeviceController.getFromDepartment
 );
 
@@ -37,6 +37,12 @@ router.patch(
   "/api/devices",
   passport.authenticate("jwt", { session: false }),
   DeviceController.patch
+);
+
+router.delete(
+  "/api/devices/",
+  passport.authenticate("jwt", { session: false }),
+  DeviceController.delete
 );
 
 module.exports = router;

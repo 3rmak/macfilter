@@ -31,6 +31,7 @@
         </p>
       </div>
       <div class="modal-footer pt-0">
+        <button class="btn btn-danger" @click="deleteDevice">Удалить</button>
         <button class="btn btn-success" @click="saveChanges">Сохранить изменения</button>
         <button class="btn btn-secondary" @click="$modal.hide(device._id)">Закрыть</button>
       </div>
@@ -64,6 +65,18 @@ export default {
           .then(()=>{
             location.reload()
           })
+      }
+    },
+    async deleteDevice() {
+      try {
+        console.log('this.device', this.device)
+        const response = await request('/api/devices', "DELETE", this.device._id)
+        await this.$swal({text: response.message})
+          .then(()=>{
+            location.reload()
+          })
+      } catch (error) {
+        console.warn(error)
       }
     }
   }

@@ -139,7 +139,7 @@ export default {
       departments: []
     }
   },
-  async created() {
+  created() {
     if (localStorage.getItem('jwt') !== null) {
       this.auth = true
       this.role = localStorage.getItem('role')

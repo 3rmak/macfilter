@@ -55,7 +55,6 @@ module.exports = {
         const user = await User.findOne({ email })
 
         if (!user) {
-            // return res.status(400).json({ message: 'Пользоватлея с таким email -не существует' })
             return res.status(400).json({ message: 'Пользователя с таким email - не существует' })
 
         }
@@ -69,7 +68,7 @@ module.exports = {
         const token = jwt.sign(
             { userId: user.id },
             config.get('jwtSecret'),
-            { expiresIn: '10s' }
+            { expiresIn: '1h' }
         )
         return res.json({ token, user: user, message: 'Авторизовано'})
 

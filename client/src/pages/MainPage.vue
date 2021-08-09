@@ -3,6 +3,7 @@
     <navbar />
     <div class="header">
       <h1>Main Page</h1>
+      
     </div>
   </div>
 </template>
