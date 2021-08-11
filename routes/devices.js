@@ -2,7 +2,6 @@ const { Router } = require("express");
 const DeviceController = require("../controllers/device");
 const middlewareACL = require('../middleware/acl')
 const passport = require("passport");
-// const passportBasic = require("../middleware/passwordBasic")
 const router = Router();
 const cors = require("cors");
 
@@ -23,15 +22,6 @@ router.get(
 router.get(
   "/api/devices/:id",
   passport.authenticate("jwt", { session: false }),
-  // passport.authenticate('basic', { session: false }),
-  DeviceController.getFromDepartment
-);
-
-// GET by departmentID basicStrategy
-router.get(
-  "/api/devices/:id",
-  // passport.authenticate("jwt", { session: false }),
-  passport.authenticate('basic', { session: false }),
   DeviceController.getFromDepartment
 );
 
@@ -40,16 +30,21 @@ router.post(
   "/api/devices",
   [
     passport.authenticate("jwt", { session: false }),
-    // passport.authenticate('basic', { session: false }),
   ],
   DeviceController.post
 );
 
+// GET by departmentID basicStrategy
+router.get(
+  "/api/router/devices/:id",
+  passport.authenticate('basic', { session: false }),
+  DeviceController.getFromDepartment
+);
+
 // POST basicStrategy
 router.post(
-  "/api/devices",
+  "/api/router/devices",
   [
-    // passport.authenticate("jwt", { session: false }),
     passport.authenticate('basic', { session: false }),
   ],
   DeviceController.post

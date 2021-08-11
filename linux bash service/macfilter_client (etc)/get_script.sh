@@ -11,7 +11,7 @@ DEPARTMENT_ID='60daba810749b827e0cb8448'
 
 while true
 do
-	response=$(curl --location --request GET "http://$IP:$PORT/api/devices/$DEPARTMENT_ID" | jq -r '.devices')
+	response=$(curl --location --request GET "http://$IP:$PORT/api/router/devices/$DEPARTMENT_ID" | jq -r '.devices')
 	
 	if [ -f /etc/firewall.user ]; then
 		rm /etc/firewall.user

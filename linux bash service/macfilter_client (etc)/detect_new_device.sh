@@ -27,7 +27,7 @@ if [ "$1" == "add" ] && [ "$unknown_mac_addr" -ne 0 ]; then
   echo `date` $msg >> $known_mac_addr
 
   echo "adding"
-  curl --location --request POST "http://$IP:$PORT/api/devices" \
+  curl --location --request POST "http://$IP:$PORT/api/router/devices" \
   --header 'Content-Type: application/json' \
   --data-raw '{
     "department": "'"$DEPARTMENT_ID"'",
