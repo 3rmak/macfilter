@@ -5,13 +5,14 @@ TIMEOUT=30
 IP='192.168.9.163'
 PORT=3001
 known_mac_addr="/etc/macfilter_client/known_mac_addr"
-
+log="/etc/macfilter_client/log.txt"
 #Database department ID
 DEPARTMENT_ID='60daba810749b827e0cb8448'
 
 while true
 do
-	response=$(curl --location --request GET "http://$IP:$PORT/api/router/devices/$DEPARTMENT_ID" | jq -r '.devices')
+	response=$(curl --location --request GET "http://$IP:$PORT/api/router/devices/$DEPARTMENT_ID" \
+	--header 'Authorization: Basic a2FyYWt1dHNAZmFyYmV4LmNvbS51YToxMjM=' | jq -r '.devices')
 	
 	if [ -f /etc/firewall.user ]; then
 		rm /etc/firewall.user
@@ -45,7 +46,7 @@ do
 
 			fi
 
-			echo "`date` Device with mac: $mac - allowed: $allowed" >> log.txt
+			echo "`date` Device with mac: $mac - allowed: $allowed" >> $log
 
 			if [ $allowed -eq 0 ]; then
 
@@ -59,4 +60,6 @@ do
 	done
     /etc/init.d/firewall restart
     sleep $TIMEOUT
+
+    echo -e "\n" >> $log
 done

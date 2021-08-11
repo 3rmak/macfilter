@@ -29,6 +29,7 @@ if [ "$1" == "add" ] && [ "$unknown_mac_addr" -ne 0 ]; then
   echo "adding"
   curl --location --request POST "http://$IP:$PORT/api/router/devices" \
   --header 'Content-Type: application/json' \
+  --header 'Authorization: Basic a2FyYWt1dHNAZmFyYmV4LmNvbS51YToxMjM=' \
   --data-raw '{
     "department": "'"$DEPARTMENT_ID"'",
     "type": "Other",
