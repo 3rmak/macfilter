@@ -70,7 +70,7 @@ export default {
     async deleteDevice() {
       try {
         console.log('this.device', this.device)
-        const response = await request('/api/devices', "DELETE", this.device._id)
+        const response = await request('/api/devices', "DELETE", this.device)
         await this.$swal({text: response.message})
           .then(()=>{
             location.reload()

@@ -5,7 +5,7 @@ STOP=15
 
 pid_file="/var/run/$name.pid"
 dir="/etc/macfilter_client"
-app="sh run.sh &>/dev/null &"
+app="sh get_script.sh &>/dev/null &"
 
 stdout_log="/var/log/$name.log"
 stderr_log="/var/log/$name.err"
@@ -24,7 +24,7 @@ start(){
 
                 cd $dir
                 $app >> "$stdout_log" 2>> "$stderr_log" &
-                echo `pgrep -f run.sh` > "$pid_file"
+                echo `pgrep -f get_script.sh` > "$pid_file"
                 echo `pgrep -f sleep` >> "$pid_file"
                 echo "Working.."
 

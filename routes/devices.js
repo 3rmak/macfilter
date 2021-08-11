@@ -27,8 +27,7 @@ router.get(
 router.post(
   "/api/devices",
   [
-    middlewareACL('admin'),
-    passport.authenticate("jwt", { session: false }),
+    // passport.authenticate("jwt", { session: false }),
   ],
   DeviceController.post
 );

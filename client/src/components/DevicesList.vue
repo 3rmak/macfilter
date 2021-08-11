@@ -1,7 +1,18 @@
 <template>
   <div class="department-page" v-cloak>
     <div class="container">
-      <h1>РОП {{ department }}</h1>
+      <div class="header-container row justify-content-between inline">
+        <h1 class="col-5">РОП {{ department }}</h1>
+        <div class="col-5 text-right">
+          <router-link
+            class="btn btn-outline-info"
+            type="submit"
+            :to="$router.resolve({ name: 'createDevice' }).href"
+            >Добавить устройство вручную
+          </router-link>
+        </div>
+      </div>
+
       <div v-if="devices.length">
         <div class="row justify-content-around">
           <div v-for="device in devices" :key="device">

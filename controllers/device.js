@@ -31,10 +31,18 @@ module.exports = {
   },
   post: async (req, res) => {
     try {
-        const device = await {...req.body, id: v4()}
-        console.log('req.body', req.body)
+        console.log("req.body", req.body)
+        const device = await {...req.body, id: v4(), addingDate: new Date()}
         const item = await new Device({...device})
-        item.department = await Department.findOne({ 'name': device.department })
+        console.log("item", item)
+        const department = await Department.findOneAndUpdate(
+            {_id: item.department},
+            {$push: {
+                devices: item._id
+            }}
+            )
+        await department.save()
+        console.log("item", item)
         await item.save()
             .catch((e) => {
                 console.log('error', e)
@@ -89,7 +97,8 @@ module.exports = {
       try {
         res.header("Access-Control-Allow-Origin", "*")
         res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
-        const id = req.body
+        console.log("req.body._id", req.body._id)
+        const id = req.body._id
         const device = await Device.findById(id)
         const department = await Department.findById(device.department)
         const depDevices = department.devices

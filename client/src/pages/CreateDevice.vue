@@ -16,7 +16,7 @@
             <option>Планшет</option>
             <option>Ноутбук</option>
             <hr />
-            <option>Другое</option>
+            <option>Other</option>
           </select>
         </div>
         <div class="form-group mb-3">

@@ -1,0 +1,1202 @@
+Tue Aug 10 09:42:28 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Tue Aug 10 09:46:52 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Tue Aug 10 09:46:54 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Tue Aug 10 09:46:55 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Tue Aug 10 17:03:00 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Tue Aug 10 17:03:02 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Tue Aug 10 17:03:04 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Tue Aug 10 17:04:07 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Tue Aug 10 17:04:09 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Tue Aug 10 17:04:12 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Tue Aug 10 17:05:15 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Tue Aug 10 17:05:16 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Tue Aug 10 17:05:17 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Tue Aug 10 17:06:21 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Tue Aug 10 17:06:22 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Tue Aug 10 17:06:23 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Tue Aug 10 17:07:28 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Tue Aug 10 17:07:30 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Tue Aug 10 17:07:31 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Tue Aug 10 17:08:35 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Tue Aug 10 17:08:36 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Tue Aug 10 17:08:37 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Tue Aug 10 17:09:40 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Tue Aug 10 17:09:43 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Tue Aug 10 17:09:45 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Tue Aug 10 17:10:50 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Tue Aug 10 17:10:52 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Tue Aug 10 17:10:55 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Tue Aug 10 17:12:00 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Tue Aug 10 17:12:02 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Tue Aug 10 17:12:05 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Tue Aug 10 17:13:10 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Tue Aug 10 17:13:12 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Tue Aug 10 17:13:15 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Tue Aug 10 17:14:20 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Tue Aug 10 17:14:23 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Tue Aug 10 17:14:25 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Tue Aug 10 17:15:28 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Tue Aug 10 17:15:30 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Tue Aug 10 17:15:31 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Tue Aug 10 17:16:34 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Tue Aug 10 17:16:35 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Tue Aug 10 17:16:37 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Tue Aug 10 17:17:40 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Tue Aug 10 17:17:41 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Tue Aug 10 17:17:43 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Tue Aug 10 17:18:46 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Tue Aug 10 17:18:47 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Tue Aug 10 17:18:48 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Tue Aug 10 17:19:52 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Tue Aug 10 17:19:53 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Tue Aug 10 17:19:54 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 08:44:21 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 08:44:22 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 08:44:24 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 08:45:27 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 08:45:28 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 08:45:29 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 08:46:32 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 08:46:34 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 08:46:35 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 08:47:38 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 08:47:39 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 08:47:40 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 08:48:43 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 08:48:45 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 08:48:46 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 08:49:49 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 08:49:50 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 08:49:51 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 08:50:54 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 08:50:56 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 08:50:57 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 08:52:00 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 08:52:01 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 08:52:02 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>SyntaxError: Unexpected token } in JSON at position 204<br> &nbsp; &nbsp;at JSON.parse (&lt;anonymous&gt;)<br> &nbsp; &nbsp;at parse (C:\Users\Горбась\VScodeProjects\macfilter\node_modules\body-parser\lib\types\json.js:89:19)<br> &nbsp; &nbsp;at C:\Users\Горбась\VScodeProjects\macfilter\node_modules\body-parser\lib\read.js:121:18<br> &nbsp; &nbsp;at invokeCallback (C:\Users\Горбась\VScodeProjects\macfilter\node_modules\raw-body\index.js:224:16)<br> &nbsp; &nbsp;at done (C:\Users\Горбась\VScodeProjects\macfilter\node_modules\raw-body\index.js:213:7)<br> &nbsp; &nbsp;at IncomingMessage.onEnd (C:\Users\Горбась\VScodeProjects\macfilter\node_modules\raw-body\index.js:273:7)<br> &nbsp; &nbsp;at IncomingMessage.emit (events.js:412:35)<br> &nbsp; &nbsp;at endReadableNT (internal/streams/readable.js:1317:12)<br> &nbsp; &nbsp;at processTicksAndRejections (internal/process/task_queues.js:82:21)</pre>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>SyntaxError: Unexpected token &#39; in JSON at position 0<br> &nbsp; &nbsp;at JSON.parse (&lt;anonymous&gt;)<br> &nbsp; &nbsp;at createStrictSyntaxError (C:\Users\Горбась\VScodeProjects\macfilter\node_modules\body-parser\lib\types\json.js:158:10)<br> &nbsp; &nbsp;at parse (C:\Users\Горбась\VScodeProjects\macfilter\node_modules\body-parser\lib\types\json.js:83:15)<br> &nbsp; &nbsp;at C:\Users\Горбась\VScodeProjects\macfilter\node_modules\body-parser\lib\read.js:121:18<br> &nbsp; &nbsp;at invokeCallback (C:\Users\Горбась\VScodeProjects\macfilter\node_modules\raw-body\index.js:224:16)<br> &nbsp; &nbsp;at done (C:\Users\Горбась\VScodeProjects\macfilter\node_modules\raw-body\index.js:213:7)<br> &nbsp; &nbsp;at IncomingMessage.onEnd (C:\Users\Горбась\VScodeProjects\macfilter\node_modules\raw-body\index.js:273:7)<br> &nbsp; &nbsp;at IncomingMessage.emit (events.js:412:35)<br> &nbsp; &nbsp;at endReadableNT (internal/streams/readable.js:1317:12)<br> &nbsp; &nbsp;at processTicksAndRejections (internal/process/task_queues.js:82:21)</pre>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>SyntaxError: Unexpected token &#39; in JSON at position 0<br> &nbsp; &nbsp;at JSON.parse (&lt;anonymous&gt;)<br> &nbsp; &nbsp;at createStrictSyntaxError (C:\Users\Горбась\VScodeProjects\macfilter\node_modules\body-parser\lib\types\json.js:158:10)<br> &nbsp; &nbsp;at parse (C:\Users\Горбась\VScodeProjects\macfilter\node_modules\body-parser\lib\types\json.js:83:15)<br> &nbsp; &nbsp;at C:\Users\Горбась\VScodeProjects\macfilter\node_modules\body-parser\lib\read.js:121:18<br> &nbsp; &nbsp;at invokeCallback (C:\Users\Горбась\VScodeProjects\macfilter\node_modules\raw-body\index.js:224:16)<br> &nbsp; &nbsp;at done (C:\Users\Горбась\VScodeProjects\macfilter\node_modules\raw-body\index.js:213:7)<br> &nbsp; &nbsp;at IncomingMessage.onEnd (C:\Users\Горбась\VScodeProjects\macfilter\node_modules\raw-body\index.js:273:7)<br> &nbsp; &nbsp;at IncomingMessage.emit (events.js:412:35)<br> &nbsp; &nbsp;at endReadableNT (internal/streams/readable.js:1317:12)<br> &nbsp; &nbsp;at processTicksAndRejections (internal/process/task_queues.js:82:21)</pre>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>SyntaxError: Unexpected token d in JSON at position 18<br> &nbsp; &nbsp;at JSON.parse (&lt;anonymous&gt;)<br> &nbsp; &nbsp;at parse (C:\Users\Горбась\VScodeProjects\macfilter\node_modules\body-parser\lib\types\json.js:89:19)<br> &nbsp; &nbsp;at C:\Users\Горбась\VScodeProjects\macfilter\node_modules\body-parser\lib\read.js:121:18<br> &nbsp; &nbsp;at invokeCallback (C:\Users\Горбась\VScodeProjects\macfilter\node_modules\raw-body\index.js:224:16)<br> &nbsp; &nbsp;at done (C:\Users\Горбась\VScodeProjects\macfilter\node_modules\raw-body\index.js:213:7)<br> &nbsp; &nbsp;at IncomingMessage.onEnd (C:\Users\Горбась\VScodeProjects\macfilter\node_modules\raw-body\index.js:273:7)<br> &nbsp; &nbsp;at IncomingMessage.emit (events.js:412:35)<br> &nbsp; &nbsp;at endReadableNT (internal/streams/readable.js:1317:12)<br> &nbsp; &nbsp;at processTicksAndRejections (internal/process/task_queues.js:82:21)</pre>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>SyntaxError: Unexpected token d in JSON at position 18<br> &nbsp; &nbsp;at JSON.parse (&lt;anonymous&gt;)<br> &nbsp; &nbsp;at parse (C:\Users\Горбась\VScodeProjects\macfilter\node_modules\body-parser\lib\types\json.js:89:19)<br> &nbsp; &nbsp;at C:\Users\Горбась\VScodeProjects\macfilter\node_modules\body-parser\lib\read.js:121:18<br> &nbsp; &nbsp;at invokeCallback (C:\Users\Горбась\VScodeProjects\macfilter\node_modules\raw-body\index.js:224:16)<br> &nbsp; &nbsp;at done (C:\Users\Горбась\VScodeProjects\macfilter\node_modules\raw-body\index.js:213:7)<br> &nbsp; &nbsp;at IncomingMessage.onEnd (C:\Users\Горбась\VScodeProjects\macfilter\node_modules\raw-body\index.js:273:7)<br> &nbsp; &nbsp;at IncomingMessage.emit (events.js:412:35)<br> &nbsp; &nbsp;at endReadableNT (internal/streams/readable.js:1317:12)<br> &nbsp; &nbsp;at processTicksAndRejections (internal/process/task_queues.js:82:21)</pre>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>SyntaxError: Unexpected token d in JSON at position 18<br> &nbsp; &nbsp;at JSON.parse (&lt;anonymous&gt;)<br> &nbsp; &nbsp;at parse (C:\Users\Горбась\VScodeProjects\macfilter\node_modules\body-parser\lib\types\json.js:89:19)<br> &nbsp; &nbsp;at C:\Users\Горбась\VScodeProjects\macfilter\node_modules\body-parser\lib\read.js:121:18<br> &nbsp; &nbsp;at invokeCallback (C:\Users\Горбась\VScodeProjects\macfilter\node_modules\raw-body\index.js:224:16)<br> &nbsp; &nbsp;at done (C:\Users\Горбась\VScodeProjects\macfilter\node_modules\raw-body\index.js:213:7)<br> &nbsp; &nbsp;at IncomingMessage.onEnd (C:\Users\Горбась\VScodeProjects\macfilter\node_modules\raw-body\index.js:273:7)<br> &nbsp; &nbsp;at IncomingMessage.emit (events.js:412:35)<br> &nbsp; &nbsp;at endReadableNT (internal/streams/readable.js:1317:12)<br> &nbsp; &nbsp;at processTicksAndRejections (internal/process/task_queues.js:82:21)</pre>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>SyntaxError: Unexpected token d in JSON at position 18<br> &nbsp; &nbsp;at JSON.parse (&lt;anonymous&gt;)<br> &nbsp; &nbsp;at parse (C:\Users\Горбась\VScodeProjects\macfilter\node_modules\body-parser\lib\types\json.js:89:19)<br> &nbsp; &nbsp;at C:\Users\Горбась\VScodeProjects\macfilter\node_modules\body-parser\lib\read.js:121:18<br> &nbsp; &nbsp;at invokeCallback (C:\Users\Горбась\VScodeProjects\macfilter\node_modules\raw-body\index.js:224:16)<br> &nbsp; &nbsp;at done (C:\Users\Горбась\VScodeProjects\macfilter\node_modules\raw-body\index.js:213:7)<br> &nbsp; &nbsp;at IncomingMessage.onEnd (C:\Users\Горбась\VScodeProjects\macfilter\node_modules\raw-body\index.js:273:7)<br> &nbsp; &nbsp;at IncomingMessage.emit (events.js:412:35)<br> &nbsp; &nbsp;at endReadableNT (internal/streams/readable.js:1317:12)<br> &nbsp; &nbsp;at processTicksAndRejections (internal/process/task_queues.js:82:21)</pre>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>SyntaxError: Unexpected token d in JSON at position 18<br> &nbsp; &nbsp;at JSON.parse (&lt;anonymous&gt;)<br> &nbsp; &nbsp;at parse (C:\Users\Горбась\VScodeProjects\macfilter\node_modules\body-parser\lib\types\json.js:89:19)<br> &nbsp; &nbsp;at C:\Users\Горбась\VScodeProjects\macfilter\node_modules\body-parser\lib\read.js:121:18<br> &nbsp; &nbsp;at invokeCallback (C:\Users\Горбась\VScodeProjects\macfilter\node_modules\raw-body\index.js:224:16)<br> &nbsp; &nbsp;at done (C:\Users\Горбась\VScodeProjects\macfilter\node_modules\raw-body\index.js:213:7)<br> &nbsp; &nbsp;at IncomingMessage.onEnd (C:\Users\Горбась\VScodeProjects\macfilter\node_modules\raw-body\index.js:273:7)<br> &nbsp; &nbsp;at IncomingMessage.emit (events.js:412:35)<br> &nbsp; &nbsp;at endReadableNT (internal/streams/readable.js:1317:12)<br> &nbsp; &nbsp;at processTicksAndRejections (internal/process/task_queues.js:82:21)</pre>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>SyntaxError: Unexpected token d in JSON at position 18<br> &nbsp; &nbsp;at JSON.parse (&lt;anonymous&gt;)<br> &nbsp; &nbsp;at parse (C:\Users\Горбась\VScodeProjects\macfilter\node_modules\body-parser\lib\types\json.js:89:19)<br> &nbsp; &nbsp;at C:\Users\Горбась\VScodeProjects\macfilter\node_modules\body-parser\lib\read.js:121:18<br> &nbsp; &nbsp;at invokeCallback (C:\Users\Горбась\VScodeProjects\macfilter\node_modules\raw-body\index.js:224:16)<br> &nbsp; &nbsp;at done (C:\Users\Горбась\VScodeProjects\macfilter\node_modules\raw-body\index.js:213:7)<br> &nbsp; &nbsp;at IncomingMessage.onEnd (C:\Users\Горбась\VScodeProjects\macfilter\node_modules\raw-body\index.js:273:7)<br> &nbsp; &nbsp;at IncomingMessage.emit (events.js:412:35)<br> &nbsp; &nbsp;at endReadableNT (internal/streams/readable.js:1317:12)<br> &nbsp; &nbsp;at processTicksAndRejections (internal/process/task_queues.js:82:21)</pre>
+</body>
+</html>
+Wed Aug 11 09:41:26 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 09:41:27 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 09:41:28 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 09:41:30 EEST 2021 Device with mac: 33:44 - allowed: 0
+Wed Aug 11 09:42:33 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 09:42:34 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 09:42:35 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 09:42:36 EEST 2021 Device with mac: 33:44 - allowed: 0
+Wed Aug 11 09:43:39 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 09:43:40 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 09:43:42 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 09:43:43 EEST 2021 Device with mac: 33:44 - allowed: 0
+Wed Aug 11 09:44:46 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 09:44:47 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 09:44:48 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 09:44:50 EEST 2021 Device with mac: 33:44 - allowed: 0
+Wed Aug 11 09:45:53 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 09:45:54 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 09:45:55 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 09:45:57 EEST 2021 Device with mac: 33:44 - allowed: 0
+Wed Aug 11 09:47:00 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 09:47:02 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 09:47:03 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 09:47:04 EEST 2021 Device with mac: 33:44 - allowed: 0
+Wed Aug 11 09:48:07 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 09:48:08 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 09:48:10 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 09:48:11 EEST 2021 Device with mac: 33:44 - allowed: 0
+Wed Aug 11 09:49:14 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 09:49:15 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 09:49:16 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 09:49:18 EEST 2021 Device with mac: 33:44 - allowed: 0
+Wed Aug 11 09:50:21 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 09:50:22 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 09:50:23 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 09:50:24 EEST 2021 Device with mac: 33:44 - allowed: 0
+Wed Aug 11 09:51:27 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 09:51:28 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 09:51:30 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 09:51:31 EEST 2021 Device with mac: 33:44 - allowed: 0
+Wed Aug 11 09:52:34 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 09:52:35 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 09:52:36 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 09:52:38 EEST 2021 Device with mac: 33:44 - allowed: 0
+Wed Aug 11 09:53:41 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 09:53:42 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 09:53:43 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 09:53:45 EEST 2021 Device with mac: 33:44 - allowed: 0
+Wed Aug 11 09:54:48 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 09:54:49 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 09:54:50 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 09:54:51 EEST 2021 Device with mac: 33:44 - allowed: 0
+Wed Aug 11 09:55:54 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 09:55:56 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 09:55:57 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 09:55:58 EEST 2021 Device with mac: 33:44 - allowed: 0
+Wed Aug 11 09:57:01 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 09:57:03 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 09:57:04 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 09:57:05 EEST 2021 Device with mac: 33:44 - allowed: 0
+Wed Aug 11 09:58:08 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 09:58:09 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 09:58:11 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 09:58:12 EEST 2021 Device with mac: 33:44 - allowed: 0
+Wed Aug 11 09:59:15 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 09:59:16 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 09:59:17 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 09:59:19 EEST 2021 Device with mac: 33:44 - allowed: 0
+Wed Aug 11 10:00:22 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:00:23 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:00:24 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:00:25 EEST 2021 Device with mac: 33:44 - allowed: 0
+Wed Aug 11 10:01:29 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:01:30 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:01:32 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:01:33 EEST 2021 Device with mac: 33:44 - allowed: 0
+Wed Aug 11 10:02:36 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:02:37 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:02:38 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:02:40 EEST 2021 Device with mac: 33:44 - allowed: 0
+Wed Aug 11 10:03:43 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:03:44 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:03:45 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:03:47 EEST 2021 Device with mac: 33:44 - allowed: 0
+Wed Aug 11 10:04:50 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:04:51 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:04:52 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:04:53 EEST 2021 Device with mac: 33:44 - allowed: 0
+Wed Aug 11 10:05:57 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:05:58 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:05:59 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:06:00 EEST 2021 Device with mac: 33:44 - allowed: 0
+Wed Aug 11 10:07:03 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:07:04 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:07:06 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:07:07 EEST 2021 Device with mac: 33:44 - allowed: 0
+Wed Aug 11 10:08:10 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:08:11 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:08:12 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:08:14 EEST 2021 Device with mac: 33:44 - allowed: 0
+Wed Aug 11 10:09:16 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:09:18 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:09:19 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:09:20 EEST 2021 Device with mac: 33:44 - allowed: 0
+Wed Aug 11 10:10:23 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:10:24 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:10:26 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:10:27 EEST 2021 Device with mac: 33:44 - allowed: 0
+Wed Aug 11 10:11:30 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:11:31 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:11:32 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:11:34 EEST 2021 Device with mac: 33:44 - allowed: 0
+Wed Aug 11 10:12:37 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:12:38 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:12:39 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:12:40 EEST 2021 Device with mac: 33:44 - allowed: 0
+Wed Aug 11 10:13:44 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:13:45 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:13:46 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:13:47 EEST 2021 Device with mac: 33:44 - allowed: 0
+Wed Aug 11 10:14:50 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:14:52 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:14:53 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:14:54 EEST 2021 Device with mac: 33:44 - allowed: 0
+Wed Aug 11 10:15:57 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:15:58 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:16:00 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:16:01 EEST 2021 Device with mac: 33:44 - allowed: 0
+Wed Aug 11 10:17:04 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:17:05 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:17:06 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:17:07 EEST 2021 Device with mac: 33:44 - allowed: 0
+Wed Aug 11 10:18:10 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:18:11 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:18:13 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:18:14 EEST 2021 Device with mac: 33:44 - allowed: 0
+Wed Aug 11 10:19:17 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:19:18 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:19:20 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:19:21 EEST 2021 Device with mac: 33:44 - allowed: 0
+Wed Aug 11 10:20:24 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:20:25 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:20:26 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:20:28 EEST 2021 Device with mac: 33:44 - allowed: 0
+{"message":"Произошла ошибка"}Wed Aug 11 10:21:31 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:21:32 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:21:33 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:21:34 EEST 2021 Device with mac: 33:44 - allowed: 0
+Wed Aug 11 10:22:37 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:22:39 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:22:40 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:22:41 EEST 2021 Device with mac: 33:44 - allowed: 0
+Wed Aug 11 10:23:44 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:23:45 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:23:47 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:24:50 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:24:51 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:24:52 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:25:55 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:25:57 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:25:58 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:27:01 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:27:02 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:27:03 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:28:06 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:28:08 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:28:09 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:29:12 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:29:13 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:29:14 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:30:17 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:30:19 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:30:20 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+{"message":"Произошла ошибка"}Wed Aug 11 10:31:23 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:31:24 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:31:26 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+{"message":"Устройство добавлено"}Wed Aug 11 10:32:29 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:32:30 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:32:31 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+{"message":"Устройство добавлено"}Wed Aug 11 10:33:34 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:33:35 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:33:37 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:33:38 EEST 2021 Device with mac:  - allowed: 
+Wed Aug 11 10:33:39 EEST 2021 Device with mac: mac - allowed: 0
+Wed Aug 11 10:34:42 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:34:43 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:34:44 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:34:46 EEST 2021 Device with mac:  - allowed: 
+Wed Aug 11 10:34:47 EEST 2021 Device with mac: mac - allowed: 0
+Wed Aug 11 10:35:50 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:35:51 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:35:52 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:35:53 EEST 2021 Device with mac:  - allowed: 
+Wed Aug 11 10:35:55 EEST 2021 Device with mac: mac - allowed: 0
+Wed Aug 11 10:41:36 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:41:37 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:41:38 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:41:39 EEST 2021 Device with mac:  - allowed: 
+Wed Aug 11 10:41:41 EEST 2021 Device with mac: mac - allowed: 0
+Wed Aug 11 10:41:42 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 0
+Wed Aug 11 10:41:43 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 0
+Wed Aug 11 10:42:46 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:42:47 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:42:49 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:42:50 EEST 2021 Device with mac:  - allowed: 
+Wed Aug 11 10:42:51 EEST 2021 Device with mac: mac - allowed: 0
+Wed Aug 11 10:42:52 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 10:42:54 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 0
+Wed Aug 11 10:43:57 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:43:58 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:43:59 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:44:00 EEST 2021 Device with mac:  - allowed: 
+Wed Aug 11 10:44:02 EEST 2021 Device with mac: mac - allowed: 0
+Wed Aug 11 10:44:03 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 10:44:04 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 0
+Wed Aug 11 10:45:07 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:45:08 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:45:10 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:45:11 EEST 2021 Device with mac:  - allowed: 
+Wed Aug 11 10:45:12 EEST 2021 Device with mac: mac - allowed: 0
+Wed Aug 11 10:45:13 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 10:45:15 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 0
+Wed Aug 11 10:45:26 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:45:27 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:45:28 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:45:29 EEST 2021 Device with mac:  - allowed: 
+Wed Aug 11 10:45:31 EEST 2021 Device with mac: mac - allowed: 0
+Wed Aug 11 10:45:32 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 10:45:33 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 0
+Wed Aug 11 10:46:36 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:46:38 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:46:39 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:46:40 EEST 2021 Device with mac:  - allowed: 
+Wed Aug 11 10:46:41 EEST 2021 Device with mac: mac - allowed: 0
+Wed Aug 11 10:46:43 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 10:46:44 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 0
+Wed Aug 11 10:47:47 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:47:48 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:47:50 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:47:51 EEST 2021 Device with mac:  - allowed: 
+Wed Aug 11 10:47:52 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 10:48:55 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:48:56 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:48:58 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:48:59 EEST 2021 Device with mac:  - allowed: 
+Wed Aug 11 10:49:00 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 10:50:03 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:50:04 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:50:06 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:50:07 EEST 2021 Device with mac:  - allowed: 
+Wed Aug 11 10:50:08 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 10:51:11 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:51:12 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:51:14 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:51:15 EEST 2021 Device with mac:  - allowed: 
+Wed Aug 11 10:51:16 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 10:52:19 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:52:20 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:52:22 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:52:23 EEST 2021 Device with mac:  - allowed: 
+Wed Aug 11 10:52:24 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 10:52:45 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:52:46 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:52:48 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:52:49 EEST 2021 Device with mac:  - allowed: 
+Wed Aug 11 10:52:50 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 10:53:04 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:53:05 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:53:06 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:53:08 EEST 2021 Device with mac:  - allowed: 
+Wed Aug 11 10:53:09 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 10:53:22 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:53:24 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:53:26 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:53:27 EEST 2021 Device with mac:  - allowed: 
+Wed Aug 11 10:53:28 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 10:53:43 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:53:45 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:53:46 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:53:47 EEST 2021 Device with mac:  - allowed: 
+Wed Aug 11 10:53:48 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 10:54:02 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:54:04 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:54:05 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:54:06 EEST 2021 Device with mac:  - allowed: 
+Wed Aug 11 10:54:08 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 10:54:21 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:54:23 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:54:24 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:54:25 EEST 2021 Device with mac:  - allowed: 
+Wed Aug 11 10:54:26 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 10:54:40 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:54:41 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:54:43 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:54:44 EEST 2021 Device with mac:  - allowed: 
+Wed Aug 11 10:54:45 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 10:54:59 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:55:00 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:55:01 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:55:02 EEST 2021 Device with mac:  - allowed: 
+Wed Aug 11 10:55:04 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 10:55:17 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:55:19 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:55:20 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:55:21 EEST 2021 Device with mac:  - allowed: 
+Wed Aug 11 10:55:22 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 10:55:36 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:55:37 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:55:39 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:55:40 EEST 2021 Device with mac:  - allowed: 
+Wed Aug 11 10:55:41 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 10:55:55 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:55:56 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:55:58 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:55:59 EEST 2021 Device with mac:  - allowed: 
+Wed Aug 11 10:56:00 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 10:56:14 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:56:15 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:56:16 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:56:18 EEST 2021 Device with mac:  - allowed: 
+Wed Aug 11 10:56:19 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 10:56:33 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:56:34 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:56:35 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:56:36 EEST 2021 Device with mac:  - allowed: 
+Wed Aug 11 10:56:38 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 10:56:51 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:56:53 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:56:54 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:56:55 EEST 2021 Device with mac:  - allowed: 
+Wed Aug 11 10:56:56 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 10:57:10 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:57:11 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:57:13 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:57:14 EEST 2021 Device with mac:  - allowed: 
+Wed Aug 11 10:57:15 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 10:57:29 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:57:30 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:57:32 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:57:33 EEST 2021 Device with mac:  - allowed: 
+Wed Aug 11 10:57:34 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 10:57:48 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:57:49 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:57:50 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:57:52 EEST 2021 Device with mac:  - allowed: 
+Wed Aug 11 10:57:53 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 10:58:07 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:58:08 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:58:09 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:58:10 EEST 2021 Device with mac:  - allowed: 
+Wed Aug 11 10:58:12 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 10:58:25 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:58:27 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:58:28 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:58:29 EEST 2021 Device with mac:  - allowed: 
+Wed Aug 11 10:58:30 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 10:58:44 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:58:45 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:58:47 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:58:48 EEST 2021 Device with mac:  - allowed: 
+Wed Aug 11 10:58:49 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 10:59:03 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:59:04 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:59:05 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:59:07 EEST 2021 Device with mac:  - allowed: 
+Wed Aug 11 10:59:08 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 10:59:22 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:59:23 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:59:24 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:59:26 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 10:59:27 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 0
+Wed Aug 11 10:59:40 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 10:59:42 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 10:59:43 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 10:59:44 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 10:59:45 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 0
+Wed Aug 11 10:59:59 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:00:01 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:00:02 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:00:03 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:00:05 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 0
+Wed Aug 11 11:00:18 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:00:20 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:00:21 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:00:22 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:00:23 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 0
+Wed Aug 11 11:00:37 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:00:38 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:00:40 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:00:41 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:00:42 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 0
+Wed Aug 11 11:03:39 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:03:41 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:03:42 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:03:43 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:03:44 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 0
+Wed Aug 11 11:03:58 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:03:59 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:04:01 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:04:02 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:04:03 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 0
+Wed Aug 11 11:04:17 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:04:18 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:04:20 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:04:21 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:04:22 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 0
+Wed Aug 11 11:04:36 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:04:37 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:04:39 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:04:40 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:04:41 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 0
+Wed Aug 11 11:04:55 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:04:56 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:04:57 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:04:58 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:05:00 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 0
+Wed Aug 11 11:05:13 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:05:15 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:05:16 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:05:17 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:05:18 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 0
+Wed Aug 11 11:05:33 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:05:34 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:05:35 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:05:36 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:05:38 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 0
+Wed Aug 11 11:05:51 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:05:53 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:05:54 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:05:55 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:05:56 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 0
+Wed Aug 11 11:06:10 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:06:11 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:06:13 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:06:14 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:06:15 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:06:29 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:06:30 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:06:32 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:06:33 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:06:34 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:06:48 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:06:49 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:06:51 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:06:52 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:06:53 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:07:07 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:07:08 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:07:09 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:07:11 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:07:12 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:07:26 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:07:27 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:07:28 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:07:30 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:07:31 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:07:45 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:07:46 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:07:47 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:07:48 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:07:50 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:08:03 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:08:05 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:08:06 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:08:07 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:08:08 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 0
+Wed Aug 11 11:08:22 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:08:23 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:08:25 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:08:26 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:08:27 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 0
+Wed Aug 11 11:08:41 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:08:42 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:08:43 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:08:45 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:08:46 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:09:00 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:09:01 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:09:02 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:09:03 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:09:05 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:09:18 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:09:20 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:09:21 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:09:22 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:09:23 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:09:37 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:09:39 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:09:40 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:09:41 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:09:42 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:09:56 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:09:57 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:09:59 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:10:00 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:10:01 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:10:15 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:10:16 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:10:17 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:10:19 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:10:20 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:10:34 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:10:35 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:10:36 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:10:37 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:10:39 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:10:52 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:10:54 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:10:55 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:10:56 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:10:57 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:11:11 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:11:12 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:11:14 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:11:15 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:11:16 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:11:30 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:11:31 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:11:33 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:11:34 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:11:35 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:11:49 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:11:50 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:11:51 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:11:52 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:11:54 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:12:07 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:12:09 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:12:10 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:12:11 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:12:12 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:12:26 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:12:28 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:12:29 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:12:30 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:12:31 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:12:45 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:12:46 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:12:48 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:12:49 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:12:50 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:13:04 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:13:05 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:13:06 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:13:08 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:13:09 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:13:23 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:13:24 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:13:26 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:13:27 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:13:28 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:13:42 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:13:43 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:13:44 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:13:46 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:13:47 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:14:01 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:14:02 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:14:03 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:14:04 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:14:06 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:14:19 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:14:21 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:14:22 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:14:23 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:14:24 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:14:38 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:14:40 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:14:41 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:14:42 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:14:43 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:14:57 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:14:58 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:15:00 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:15:01 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:15:02 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:15:16 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:15:17 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:15:18 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:15:20 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:15:21 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:15:35 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:15:36 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:15:37 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:15:38 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:15:40 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:15:53 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:15:54 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:15:56 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:15:57 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:15:58 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:16:12 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:16:13 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:16:14 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:16:16 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:16:17 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:16:31 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:16:32 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:16:33 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:16:35 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:16:36 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:16:50 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:16:51 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:16:52 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:16:54 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:16:55 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:17:09 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:17:10 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:17:11 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:17:12 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:17:13 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:17:27 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:17:28 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:17:30 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:17:31 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:17:32 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:17:46 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:17:47 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:17:48 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:17:50 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:17:51 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:18:05 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:18:06 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:18:07 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:18:09 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:18:10 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:18:24 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:18:25 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:18:26 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:18:27 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:18:29 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:18:42 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:18:44 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:18:45 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:18:46 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:18:47 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:19:01 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:19:02 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:19:04 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:19:05 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:19:06 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:19:20 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:19:21 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:19:22 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:19:23 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:19:25 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:19:38 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:19:40 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:19:41 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:19:42 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:19:43 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:19:57 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:19:59 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:20:00 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:20:01 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:20:03 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:20:16 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:20:18 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:20:19 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:20:20 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:20:21 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:20:35 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:20:36 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:20:38 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:20:39 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:20:40 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:20:54 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:20:55 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:20:56 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:20:58 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:20:59 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:21:13 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:21:14 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:21:15 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:21:16 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:21:18 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:21:32 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:21:33 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:21:34 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:21:35 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:21:37 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:21:50 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:21:52 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:21:53 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:21:55 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:21:56 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:22:10 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:22:11 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:22:12 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:22:14 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:22:15 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:22:29 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:22:30 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:22:31 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:22:32 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:22:34 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:22:47 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:22:49 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:22:50 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:22:51 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:22:52 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:23:06 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:23:07 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:23:09 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:23:10 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:23:11 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:23:25 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:23:26 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:23:28 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:23:29 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:23:30 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:23:44 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:23:45 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:23:46 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:23:48 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:23:49 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:24:03 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:24:04 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:24:05 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:24:06 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:24:08 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:24:21 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:24:23 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:24:24 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:24:25 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:24:27 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:24:40 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:24:42 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:24:43 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:24:44 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:24:45 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:24:59 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:25:00 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:25:02 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:25:03 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:25:04 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:25:18 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:25:19 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:25:21 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:25:22 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:25:23 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:25:37 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:25:38 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:25:40 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:25:41 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:25:42 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:25:56 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:25:57 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:25:58 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:26:00 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:26:01 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:26:15 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:26:16 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:26:17 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:26:18 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:26:20 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:26:33 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:26:35 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:26:36 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:26:37 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:26:39 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:26:53 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:26:54 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:26:55 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:26:56 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:26:58 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:27:11 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:27:13 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:27:14 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:27:15 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:27:16 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:27:30 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:27:31 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:27:33 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:27:34 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:27:35 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:27:49 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:27:50 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:27:52 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:27:53 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:27:54 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:28:08 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:28:09 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:28:10 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:28:12 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:28:13 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:28:27 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:28:28 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:28:29 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:28:30 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:28:32 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:28:45 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:28:47 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:28:48 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:28:49 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:28:50 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:29:04 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:29:05 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:29:07 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:29:08 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:29:09 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:29:23 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:29:24 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:29:25 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:29:27 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:29:28 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:29:42 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:29:43 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:29:44 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:29:46 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:29:47 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:30:01 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:30:02 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:30:03 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:30:04 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:30:06 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:30:19 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:30:21 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:30:22 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:30:23 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:30:24 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:30:38 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:30:40 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:30:41 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:30:42 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:30:43 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:30:57 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:30:58 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:31:00 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:31:01 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:31:02 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:31:16 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:31:17 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:31:18 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:31:20 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:31:21 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:31:35 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:31:36 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:31:37 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:31:38 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:31:40 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:31:53 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:31:54 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:31:56 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:31:57 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:31:58 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:32:12 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:32:13 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:32:14 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:32:16 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:32:17 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:32:31 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:32:32 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:32:33 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:32:34 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:32:36 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:32:50 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:32:51 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:32:52 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:32:54 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:32:55 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:33:09 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:33:10 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:33:11 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:33:12 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:33:14 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:33:27 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:33:29 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:33:30 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:33:31 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:33:32 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:33:46 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:33:47 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:33:49 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:33:50 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:33:51 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:34:05 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:34:06 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:34:08 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:34:09 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:34:10 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:34:24 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:34:25 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:34:26 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:34:28 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:34:29 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:34:42 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:34:44 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:34:45 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:34:46 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:34:48 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:35:01 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:35:03 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:35:04 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:35:05 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:35:06 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:35:20 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:35:21 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:35:23 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:35:24 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:35:25 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:35:39 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:35:40 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:35:42 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:35:43 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:35:44 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:35:58 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:35:59 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:36:00 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:36:02 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:36:03 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:36:17 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:36:18 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:36:19 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:36:20 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:36:22 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:36:35 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:36:37 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:36:38 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:36:39 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:36:40 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:36:54 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:36:55 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:36:57 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:36:58 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:36:59 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:37:13 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:37:14 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:37:15 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:37:17 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:37:18 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:37:32 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:37:33 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:37:34 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:37:35 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:37:37 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:37:50 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:37:52 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:37:53 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:37:54 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:37:55 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:38:10 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:38:11 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:38:12 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:38:13 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:38:15 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:38:28 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:38:30 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:38:31 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:38:32 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:38:33 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:38:47 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:38:48 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:38:50 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:38:51 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:38:52 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:39:01 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:39:03 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:39:04 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:39:05 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:39:06 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:39:18 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:39:19 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:39:20 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:39:22 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:39:23 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:39:36 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:39:38 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:39:39 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:39:41 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:39:42 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:39:56 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:39:57 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:39:58 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:39:59 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:40:01 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:40:14 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:40:16 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:40:17 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:40:18 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:40:19 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:40:33 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:40:34 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:40:36 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:40:37 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:40:38 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:40:52 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:40:53 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:40:54 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:40:56 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:40:57 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:41:10 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:41:12 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:41:13 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:41:14 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:41:15 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:41:29 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:41:31 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:41:32 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:41:33 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:41:34 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:41:48 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:41:49 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:41:51 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:41:52 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:41:53 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:42:07 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:42:08 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:42:09 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:42:11 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:42:12 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:42:26 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:42:27 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:42:28 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:42:29 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:42:31 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:42:44 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:42:46 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:42:47 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:42:48 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:42:49 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:43:03 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:43:05 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:43:06 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:43:07 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:43:08 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:43:22 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:43:23 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:43:25 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:43:26 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:43:27 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1
+Wed Aug 11 11:43:41 EEST 2021 Device with mac: 00:57:47:01:14:27 - allowed: 0
+Wed Aug 11 11:43:42 EEST 2021 Device with mac: B0:6E:BF:35:1B:05 - allowed: 0
+Wed Aug 11 11:43:43 EEST 2021 Device with mac: d0:f8:8c:19:13:cd - allowed: 0
+Wed Aug 11 11:43:45 EEST 2021 Device with mac: b0:6e:bf:33:17:d2 - allowed: 1
+Wed Aug 11 11:43:46 EEST 2021 Device with mac: ba:60:08:ee:d4:9c - allowed: 1

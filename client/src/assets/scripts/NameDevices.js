@@ -7,5 +7,5 @@ module.exports = {
   "Ноутбук": require(`../images/laptop.png`),
   "Смартфон": require(`../images/smartphone.png`),  
   "Планшет": require(`../images/planshet.png`),
-  "Другое": require(`../images/xz.png`),
+  "Other": require(`../images/xz.png`),
 }
