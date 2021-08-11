@@ -27,7 +27,7 @@ module.exports = {
             return res.status(400).json({ message: 'Пользователь с таким email уже существует' })
         }
 
-        const hashedPass = await bcrypt.hash(password, 12)
+        const hashedPass = bcrypt.hash(password, 12)
         const user = new User({ email, password: hashedPass, role, id: v4(), access})
         await user.save()
         return res.status(201).json({ message: 'Пользователь создан' })
@@ -59,7 +59,7 @@ module.exports = {
 
         }
 
-        const isMatch = await bcrypt.compare(password, user.password)
+        const isMatch = bcrypt.compare(password, user.password)
 
         if (!isMatch) {
             return res.status(400).json({ message: 'Неверный пароль'})

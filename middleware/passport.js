@@ -1,7 +1,9 @@
 const JwtStrategy = require('passport-jwt').Strategy
 const ExtractJwt = require('passport-jwt').ExtractJwt
+const BasicStrategy = require('passport-http').BasicStrategy
 const User = require('../models/User')
 const config = require('config')
+const bcrypt = require('bcryptjs')
 let opts = {
   jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
   secretOrKey: config.get('jwtSecret')
@@ -22,4 +24,20 @@ module.exports = passport => {
         }
     });
 }));
+  passport.use(
+    new BasicStrategy(function (email, password, done) {
+      User.findOne({ email: email }, function (err, user) {
+        if (err) {
+          return done(err);
+        }
+        if (!user) {
+          return done(null, false);
+        }
+        if (!bcrypt.compare(password, user.password)) {
+          return done(null, false);
+        }
+        return done(null, user);
+      });
+    })
+  );
 }
