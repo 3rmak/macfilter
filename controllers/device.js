@@ -31,10 +31,31 @@ module.exports = {
   },
   post: async (req, res) => {
     try {
-        console.log("req.body", req.body)
+        
+        res.header("Access-Control-Allow-Origin", "*")
+        res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
+
+        // mac validation stage
+        const macRegex = /^[0-9a-fA-F]{2}(:[0-9a-fA-F]{2}){5}$/i
+        if(!macRegex.test((req.body).mac)){
+            return res.status(500).json({ message: 'Ошибка. Устройство не добавлено. Проверьте правильность написания mac-адреса' })
+        }
+        
+        // check is this mac already exist in that department
+        const reqDepartment = (req.body).department
+        const devices = await Device.find(
+            {'department': reqDepartment}
+        )
+        const MACs = devices.map((val)=>{
+            return val.mac
+        })
+        if(MACs.includes((req.body).mac)){
+            return res.status(500).json({ message: 'Устройство с таким mac-адресом уже существует!' })
+        }
+
+        // creating new device
         const device = await {...req.body, id: v4(), addingDate: new Date()}
         const item = await new Device({...device})
-        console.log("item", item)
         const department = await Department.findOneAndUpdate(
             {_id: item.department},
             {$push: {
@@ -42,13 +63,12 @@ module.exports = {
             }}
             )
         await department.save()
-        console.log("item", item)
         await item.save()
             .catch((e) => {
                 console.log('error', e)
             })
 
-        // reference to device in department collection
+        // creating reference to device in department collection
         await Department.findOneAndUpdate(
             { 'name': device.department },
             { $push: { devices: item.id } },
@@ -59,8 +79,6 @@ module.exports = {
                     console.log("Success:", success);
                 }
             })
-        res.header("Access-Control-Allow-Origin", "*")
-        res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
         res.status(201).json({ message: 'Устройство добавлено' })
     } catch (e) {
         res.status(500).json({ message: 'Произошла ошибка' })

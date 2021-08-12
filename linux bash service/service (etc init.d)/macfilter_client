@@ -3,6 +3,7 @@
 START=10
 STOP=15
 
+name="macfilter_client"
 pid_file="/var/run/$name.pid"
 dir="/etc/macfilter_client"
 app="sh get_script.sh &>/dev/null &"
@@ -22,13 +23,16 @@ start(){
   if [ -d $dir ]; then
       if ! `is_working` ; then
 
+		echo "name $name"
                 cd $dir
                 $app >> "$stdout_log" 2>> "$stderr_log" &
                 echo `pgrep -f get_script.sh` > "$pid_file"
                 echo `pgrep -f sleep` >> "$pid_file"
-                echo "Working.."
+		echo "Started with pid $(pgrep -f get_script.sh)"
+                echo "Working..."
 
         else
+		echo "name $name"
                 echo "App working now"
 
         fi

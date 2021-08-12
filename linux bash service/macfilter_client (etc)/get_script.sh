@@ -4,7 +4,7 @@
 TIMEOUT=30
 IP='192.168.9.163'
 PORT=3001
-known_mac_addr="/etc/macfilter_client/known_mac_addr"
+known_mac_addr=/etc/macfilter_client/known_mac_addr
 log="/etc/macfilter_client/log.txt"
 #Database department ID
 DEPARTMENT_ID='60daba810749b827e0cb8448'
@@ -20,6 +20,8 @@ do
 
 	count=$(echo $response | grep -i -o "mac" | wc -l )
 
+	new_known_mac_addr=""
+
 	i=0; while [ $i -lt $count ]; do
 
 			test=$(echo $response | jq '.['$i'] | {mac, allowed}')
@@ -34,6 +36,14 @@ do
 
 			# check if the mac is in known devices list
 			
+			if ! [ -f $known_mac_addr ]; then
+		
+				touch $known_mac_addr
+
+				echo -e "Init data from web:\n $(echo $response | jq '.[] | mac')" >> $known_mac_addr
+
+			fi			
+
 			grep -iq "$mac" "$known_mac_addr"
 
 			unknown_mac_addr=$?
@@ -45,6 +55,8 @@ do
 				echo `date` $msg >> $known_mac_addr
 
 			fi
+
+			new_known_mac_addr=$(echo -e "$new_known_mac_addr\n $(cat "$known_mac_addr" | grep $mac)" )
 
 			echo "`date` Device with mac: $mac - allowed: $allowed" >> $log
 
@@ -58,8 +70,10 @@ do
 			i=$(($i + 1))
 	
 	done
-    /etc/init.d/firewall restart
-    sleep $TIMEOUT
+    
+	echo -e "$new_known_mac_addr" > "$known_mac_addr"
+    	/etc/init.d/firewall restart
+	sleep $TIMEOUT
 
-    echo -e "\n" >> $log
+    	echo -e "\n" >> $log
 done
