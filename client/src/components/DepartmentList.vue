@@ -1,6 +1,6 @@
 <template>
   <div class="department-list">
-    <div class="row align-items-center">
+    <div class="row align-items-start">
       <department-card
         class="department-card"
         v-for="department in departments" 
