@@ -31,7 +31,7 @@ module.exports = {
   },
   post: async (req, res) => {
     try {
-        
+        console.log("req.body", req.body)
         res.header("Access-Control-Allow-Origin", "*")
         res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
 

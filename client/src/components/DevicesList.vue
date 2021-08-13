@@ -18,7 +18,7 @@
           <div v-for="device in devices" :key="device">
             <div class="col-sm-4 ml-5 mr-4">
               <device-card :device="device" @showModal="showModal" />
-              <modal :name="device._id" :width="600" :height="'auto'">
+              <modal :name="device._id" :width="450" :height="'auto'">
                 <edit-device-menu :device="device" />
               </modal>
             </div>

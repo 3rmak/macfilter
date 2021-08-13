@@ -15,33 +15,13 @@
             <option>Смартфон</option>
             <option>Планшет</option>
             <option>Ноутбук</option>
-            <hr />
-            <option>Other</option>
+            <option value="Other">Другое</option>
           </select>
         </div>
         <div class="form-group mb-3">
           <label for="department">Удаленный филиал</label>
           <select class="form-control" id="department" v-model="form.department" required>
-            <option v-for="department in departments" :key="department">{{department.name}}</option>
-            <!--                <option>Харьков</option>-->
-            <!--                <option>Кировоград</option>-->
-            <!--                <option>Луцьк</option>-->
-            <!--                <option>Чернигов</option>-->
-            <!--                <option>Запорожье</option>-->
-            <!--                <option>Одесса</option>-->
-            <!--                <option>Львов</option>-->
-            <!--                <option>Франковск</option>-->
-            <!--                <option>Хмельницк</option>-->
-            <!--                <option>Николаев</option>-->
-            <!--                <option>Белая Церковь</option>-->
-            <!--                <option>Мукачево</option>-->
-            <!--                <option>Днепр</option>-->
-            <!--                <option>Житомир</option>-->
-            <!--                <option>Киев</option>-->
-            <!--                <option>Полтава</option>-->
-            <!--                <option>Краматорск</option>-->
-            <!--                <option>Кривой Рог</option>-->
-            <!--                <option>Черкассы</option>-->
+            <option v-for="department in departments" :key="department" :value="department._id">{{department.name}}</option>
           </select>
         </div>
         <div class="form-group mb-3">
