@@ -1,6 +1,6 @@
 const request = async (url, method="GET", data=null) => {
   try {
-      const baseURL = "http://localhost:3001"
+      const baseURL = "http://192.168.9.163:3001"
       const headers = {
         'Content-Type': 'application/json',
         'Access-Control-Allow-Origin': '*',

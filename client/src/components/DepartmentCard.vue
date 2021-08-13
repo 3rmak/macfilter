@@ -1,5 +1,5 @@
 <template>
-  <div class="department-card" style="width: 25rem;">
+  <div class="department-card" style="min-width: 425px;">
     <div class="card text-center">
       <img class="card-img-top" src="../assets/images/logo.png" alt="Card image cap">
       <div class="card-body">

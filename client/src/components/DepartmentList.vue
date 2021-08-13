@@ -1,6 +1,6 @@
 <template>
   <div class="department-list">
-    <div class="row align-items-start">
+    <div class="row justify-content-center">
       <department-card
         class="department-card"
         v-for="department in departments" 
@@ -40,8 +40,8 @@ export default {
 }
 </script>
 <style scoped>
-  .department-list {
-    margin-top: 30px;
-    margin-left: 30px;
-  }
+.hhh {
+  display: flex;
+  justify-content: center;
+}
 </style>

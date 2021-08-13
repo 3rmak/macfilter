@@ -6,7 +6,7 @@
         <h1>Админка</h1>
       </div>
       <div class="content">
-        <div class="d-flex justify-content-around">
+        <div class="row d-flex justify-content-center">
           <div class="card" style="width: 21rem;">
             <img src="../assets/images/logo.png" class="card-img-top" alt="Зелька" style="width: 21rem; height: 21rem">
             <div class="card-body">
@@ -59,5 +59,9 @@ export default {
 <style>
 .content {
   margin-top: 30px;
+}
+.card {
+  margin-right: 1rem;
+  margin-left: 1rem;
 }
 </style>

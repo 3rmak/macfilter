@@ -38,7 +38,7 @@ module.exports = {
   },
   login: async (req, res) => {
     try {
-
+        console.log("req", req.body)
         const authErrors = validationResult(req)
 
         if (!authErrors.isEmpty()) {
