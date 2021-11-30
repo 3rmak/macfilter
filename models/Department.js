@@ -1,19 +1,17 @@
-const {Schema, model} = require('mongoose')
+const { Schema, model } = require('mongoose');
+
+const { dbTablesEnum } = require('../config');
+
 const schema = new Schema({
-    list: {
-        type: Schema.Types.ObjectId,
-        ref: "List"
-    },
-    name: {
-        type: String,
-        unique: true
-    },
-    devices: [{
-        type: Schema.Types.ObjectId,
-        ref: "Device"
-    }]
-})
+  name: {
+    type: String,
+    unique: true
+  },
 
-module.exports = model('Department', schema)
+  devices: [{
+    type: Schema.Types.ObjectId,
+    ref: dbTablesEnum.DEVICES
+  }]
+});
 
-
+module.exports = model(dbTablesEnum.DEPARTMENTS, schema);

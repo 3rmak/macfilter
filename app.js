@@ -1,65 +1,53 @@
-const express = require("express");
-const mongoose = require("mongoose");
-const passport = require('passport')
-//const path = require("path");
+const express = require('express');
+const mongoose = require('mongoose');
 const cors = require('cors');
-const authRoutes = require('./routes/auth.routes');
-const deviceRoutes = require("./routes/devices");
-const userRoutes = require("./routes/users");
-const departmentRoutes = require("./routes/departmens");
-const config = require('config')
-require("dotenv").config();
 
 const app = express();
-const PORT = config.get('port')
-
-async function start() {
-  try {
-    await mongoose
-      .connect(config.get('mongoUri'), {
-        useUnifiedTopology: true,
-        useNewUrlParser: true,
-        useFindAndModify: false
-      })
-      .then(() => {
-        console.log("Connection to MongoDB successfully!");
-      });
 
 
-    app.use(passport.initialize())
-    require('./middleware/passport')(passport)
+require('dotenv').config();
 
-    app.use(express.json({ extended: true }))
-    app.use(deviceRoutes);
-    app.use(userRoutes);
-    app.use(departmentRoutes);
-    app.use(authRoutes)
-    app.use(cors())
-  
+const {
+  authRoutes, departmentRoutes, deviceRoutes, userRoutes
+} = require('./routes');
+const {
+  constants: { PORT }, db, httpStatusCodes
+} = require('./config');
 
-    // app.get("/", (req, res) => {
-    //   res.sendFile(path.resolve(__dirname, "public", "index.html"));
-    // });
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
-    // app.get("/createDevice", (req, res) => {
-    //   res.sendFile(path.resolve(__dirname, "public", "createDevice.html"));
-    // });
+app.use('/api/auth', authRoutes);
+app.use(deviceRoutes);
+app.use(userRoutes);
+app.use('/api/departments', departmentRoutes);
 
-    // app.get("/kramatorsk", (req, res) => {
-    //   res.sendFile(path.resolve(__dirname, "public", "kramatorsk.html"));
-    // });
+app.use(cors({
+    origin: '*',
+  })
+);
 
-    // app.get("/createDepartment", (req, res) => {
-    //   res.sendFile(path.resolve(__dirname, "public", "createDepartment.html"));
-    // });
+app.use(_MainErrorHandler);
 
-    // app.use(express.static(path.resolve(__dirname, "public")));
+mongoose.connect(db.MONGO_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+    useFindAndModify: false
+})
+  .then(() => {
+    console.log('Connection to MongoDB successfully!');
+  });
 
-    app.listen(PORT, "0.0.0.0", () => {
-      console.log(`Server has been started on port ${PORT} `);
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`Server has been started on port ${PORT} `);
+});
+
+// eslint-disable-next-line no-unused-vars
+function _MainErrorHandler(err, req, res, next) {
+  res
+    .status(err.status || httpStatusCodes.Internal_Server_Error)
+    .json({
+      message: (err.message || 'Unknown err')
     });
-  } catch (e) {
-    console.log("Start error", e);
-  }
 }
-start()
