@@ -6,29 +6,29 @@
       <form class="form-container">
         <div class="form-group">
           <label for="email">Email:</label>
-          <input 
-            type="email" 
-            class="form-control" 
-            id="email" 
-            placeholder="email@farbex.com.ua" 
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="email@farbex.com.ua"
             v-model="loginForm.email">
         </div>
         <div class="form-group">
           <label for="exampleInputPassword1">Пароль:</label>
-          <input 
-            type="password" 
-            class="form-control" 
-            id="exampleInputPassword1" 
-            aria-describedby="passHelp" 
-            placeholder="Пароль" 
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+            aria-describedby="passHelp"
+            placeholder="Пароль"
             v-model="loginForm.password">
           <small id="passHelp" class="form-text text-muted">Никогда не делитесь своими личными данными.</small>
         </div>
-        <button type="button" class="btn btn-primary" @click="login">Войти</button>
+        <button type="submit" class="btn btn-primary" @click="login">Войти</button>
       </form>
     </div>
   </div>
-  
+
 </template>
 
 <script>
@@ -48,6 +48,8 @@ export default {
   },
   methods: {
     async login (){
+      event.preventDefault();
+
       const user = {...this.loginForm}
       const response = await request('/api/auth/login', "POST", user)
       console.log("response", response)
@@ -62,7 +64,7 @@ export default {
           })
       await this.$router.push('/')
         }
-      
+
   }
 }
 </script>

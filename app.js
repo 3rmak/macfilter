@@ -4,36 +4,39 @@ const cors = require('cors');
 
 const app = express();
 
-
 require('dotenv').config();
 
+const { corsOptions } = require('./cors');
 const {
   authRoutes, departmentRoutes, deviceRoutes, userRoutes
 } = require('./routes');
 const {
-  constants: { PORT }, db, httpStatusCodes
+  constants: { ENV, PORT }, db, httpStatusCodes
 } = require('./config');
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+if (ENV === 'dev') {
+  app.use(cors({
+    origin: '*',
+  }));
+} else {
+  app.use(cors(corsOptions));
+}
 
 app.use('/api/auth', authRoutes);
 app.use(deviceRoutes);
 app.use(userRoutes);
 app.use('/api/departments', departmentRoutes);
 
-app.use(cors({
-    origin: '*',
-  })
-);
-
 app.use(_MainErrorHandler);
 
 mongoose.connect(db.MONGO_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreateIndex: true,
-    useFindAndModify: false
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useCreateIndex: true,
+  useFindAndModify: false
 })
   .then(() => {
     console.log('Connection to MongoDB successfully!');

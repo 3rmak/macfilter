@@ -7,7 +7,7 @@ const request = async (url, method="GET", data=null) => {
         'Access-Control-Allow-Methods': 'GET, POST',
         'Access-Control-Allow-Headers': 'Content-Type',
         'Access-Control-Max-Age': '3600',
-        'Authorization': 'Bearer ' + localStorage.getItem('jwt'),
+        'Authorization': localStorage.getItem('jwt'),
       }
       const mode = 'cors'
       let body

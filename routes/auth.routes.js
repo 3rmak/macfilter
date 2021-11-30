@@ -13,11 +13,11 @@ const { user: { userCreateValidator } } = require('../validators');
 // /api/auth/register
 router.post(
   '/register',
-    [
-        requestDataValidator(userCreateValidator),
-        userMiddleware.findUserByToken,
-        userMiddleware.hasUserAccess()
-    ], authController.register
+  [
+    requestDataValidator(userCreateValidator),
+    userMiddleware.findUserByToken,
+    userMiddleware.hasUserAccess()
+  ], authController.register
 );
 
 // /api/auth/login

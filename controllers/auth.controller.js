@@ -9,7 +9,9 @@ const { jwtService, passwordService } = require('../services');
 module.exports = {
   register: async (req, res, next) => {
     try {
-      const { email, password, role, access } = req.body;
+      const {
+        email, password, role, access
+      } = req.body;
       const candidate = await User.findOne({ email });
 
       if (candidate) {
@@ -32,7 +34,6 @@ module.exports = {
   login: async (req, res, next) => {
     try {
       const { email, password } = req.body;
-
       const user = await User.findOne({ email }).select('+password +isActive');
 
       if (!user) {
@@ -45,7 +46,7 @@ module.exports = {
 
       await OAuth.create({
         token, user: user._id
-      })
+      });
 
       const normalizedUser = await userNormalizer.deletePrivateFields(user);
       res.json({ token, user: normalizedUser, message: 'Авторизовано' });
