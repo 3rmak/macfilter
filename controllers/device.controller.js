@@ -102,5 +102,22 @@ module.exports = {
     } catch (e) {
       next(e);
     }
+  },
+
+  // GET controller with password access by DepartmentId
+  getDevicesAsRouter: async (req, res, next) => {
+    try {
+      const { departmentId } = req.params;
+
+      const devices = await Device.find({ department: departmentId });
+
+      if (!devices) {
+        res.json([]);
+      }
+
+      res.json({ devices });
+    } catch (e) {
+      next(e);
+    }
   }
 };

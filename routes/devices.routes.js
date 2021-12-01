@@ -73,16 +73,26 @@ router.delete(
   deviceController.delete
 );
 
-// // GET by basicStrategy
-// router.get(
-//   '/api/router/devices/:id',
-//   deviceController.getDeviceById
-// );
-//
-// // POST basicStrategy
-// router.post(
-//   '/api/router/devices',
-//   deviceController.post
-// );
+// GET all devices by DepartmentId
+// basicStrategy
+router.get(
+  '/router/:departmentId',
+  [
+    authMiddleware.basicAuth,
+    authMiddleware.hasUserRoleAccess(userRoleEnum.ROUTER)
+  ],
+  deviceController.getDevicesAsRouter
+);
+
+// POST basicStrategy
+router.post(
+  '/router',
+  [
+    requestDataValidator(createDeviceValidator),
+    authMiddleware.basicAuth,
+    authMiddleware.hasUserRoleAccess(userRoleEnum.ROUTER)
+  ],
+  deviceController.post
+);
 
 module.exports = router;

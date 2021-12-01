@@ -12,7 +12,7 @@ module.exports = {
     if (deviceCount === 'single') {
       const { department } = req.body;
 
-      if (!user.access.includes(department)) {
+      if (!department || !user.access.includes(department)) {
         throw new ErrorHandler(httpStatusCodes.Bad_Request, 'У пользователя недостаточно прав');
       }
     } else {
@@ -36,14 +36,14 @@ module.exports = {
       const dbDepartment = await Department.findById(department);
 
       if (!dbDepartment || dbDepartment.devices.length === 0) {
-        throw new ErrorHandler(httpStatusCodes.Bad_Request, 'Bad input');
+        next(new ErrorHandler(httpStatusCodes.Bad_Request, 'Bad input'));
       }
 
       const dbDevices = await Device.find({ _id: { $in: dbDepartment.devices } });
       const result = dbDevices.find((device) => device.mac === lowercaseMac);
 
       if (result) {
-        throw new ErrorHandler(httpStatusCodes.Conflict, 'Устройство с таким же c MAC-адресом уже существует');
+        next(new ErrorHandler(httpStatusCodes.Conflict, 'Устройство с таким же c MAC-адресом уже существует'));
       }
 
       next();
