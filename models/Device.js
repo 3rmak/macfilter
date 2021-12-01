@@ -5,7 +5,7 @@ const { dbTablesEnum } = require('../config');
 const schema = new Schema({
   department: {
     type: Schema.Types.ObjectId,
-    ref: 'Department',
+    ref: dbTablesEnum.DEPARTMENTS,
     required: true
   },
   type: {
@@ -18,6 +18,8 @@ const schema = new Schema({
   },
   mac: {
     type: String,
+    lowercase: true,
+    trim: true,
     required: true
   },
   allowed: {

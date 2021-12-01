@@ -1,15 +1,15 @@
 module.exports = {
-    deletePrivateFields: (user) => {
-        const fieldsToRemove = [
-            'password',
-            'isActive'
-        ];
-        user = user.toObject();
+  deletePrivateFields: (user) => {
+    const fieldsToRemove = [
+      'password',
+      'isActive'
+    ];
+    user = user.toObject();
 
-        fieldsToRemove.forEach((field) => {
-            delete user[field];
-        });
+    fieldsToRemove.forEach((field) => {
+      delete user[field];
+    });
 
-        return user;
-    }
+    return user;
+  }
 };

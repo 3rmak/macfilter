@@ -5,8 +5,8 @@ const { deviceTypesEnum, regexp } = require('../config');
 const createDeviceValidator = Joi.object({
   department: Joi.string()
     .trim()
-    .required()
-    .lowercase(),
+    .lowercase()
+    .required(),
 
   type: Joi.string()
     .trim()
@@ -29,6 +29,43 @@ const createDeviceValidator = Joi.object({
     .trim()
 });
 
+const patchSingleDeviceValidator = Joi.object({
+  department: Joi.string()
+    .trim()
+    .lowercase()
+    .required(),
+
+  type: Joi.string()
+    .trim()
+    .allow(...Object.values(deviceTypesEnum)),
+
+  owner: Joi.string()
+    .trim(),
+
+  allowed: Joi.boolean(),
+
+  comment: Joi.string()
+    .trim()
+});
+
+const _singleDevice = Joi.object({
+  _id: Joi.string()
+    .trim()
+    .required(),
+
+  department: Joi.string()
+    .trim()
+    .lowercase()
+    .required(),
+
+  allowed: Joi.boolean()
+    .required()
+});
+
+const patchMultipleDeviceValidator = Joi.array().items(_singleDevice);
+
 module.exports = {
-  createDeviceValidator
+  createDeviceValidator,
+  patchSingleDeviceValidator,
+  patchMultipleDeviceValidator
 };

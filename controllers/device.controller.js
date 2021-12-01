@@ -1,133 +1,106 @@
-const {v4} = require('uuid')
-const Device = require('../models/Device')
-const Department = require('../models/Department')
+const Device = require('../models/Device');
+const Department = require('../models/Department');
+
+const { httpStatusCodes } = require('../config');
 
 module.exports = {
-  getAll: async (req, res) => {
+  getAll: async (req, res, next) => {
     try {
-        console.log('id all')
-        const devices = await Device.find()
-        res.header("Access-Control-Allow-Origin", "*")
-        res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
-        res.status(200).json(devices)
+      const { user } = req.locals;
+
+      const devices = await Device.find({ department: { $in: user.access } });
+      res.status(200).json(devices);
     } catch (e) {
-        console.warn(e)
+      next(e);
     }
   },
-  getFromDepartment: async ({params: {id}, req, res}) => {
+
+  getDeviceById: async (req, res, next) => {
     try {
-        const department = await Department.findById(id)
-        const depDevices = (department.devices)
-        const devices = []
-        for (val of depDevices){
-            devices.push(await Device.findById(val))
-        }
-        res.header("Access-Control-Allow-Origin", "*")
-        res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
-        res.status(200).json({devices, message:"Устройства по заданому департаменту получены успешно!"}) 
-    } catch (error) {
-        res.status(500).json({message: "Получить доступ к устройствам по заданому департаменту не удалось :("})
-    }
-  },
-  post: async (req, res) => {
-    try {
-        console.log("req.body", req.body)
-        res.header("Access-Control-Allow-Origin", "*")
-        res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
+      const { deviceId } = req.params;
+      const { user } = req.locals;
 
-        // mac validation stage
-        const macRegex = /^[0-9a-fA-F]{2}(:[0-9a-fA-F]{2}){5}$/i
-        if(!macRegex.test((req.body).mac)){
-            return res.status(500).json({ message: 'Ошибка. Устройство не добавлено. Проверьте правильность написания mac-адреса' })
-        }
-        
-        // check is this mac already exist in that department
-        const reqDepartment = (req.body).department
-        const devices = await Device.find(
-            {'department': reqDepartment}
-        )
-        const MACs = devices.map((val)=>{
-            return val.mac
-        })
-        if(MACs.includes((req.body).mac)){
-            return res.status(500).json({ message: 'Устройство с таким mac-адресом уже существует!' })
-        }
+      const dbDevice = await Device.findById(deviceId);
 
-        // creating new device
-        const device = await {...req.body, id: v4(), addingDate: new Date()}
-        const item = await new Device({...device})
-        const department = await Department.findOneAndUpdate(
-            {_id: item.department},
-            {$push: {
-                devices: item._id
-            }}
-            )
-        await department.save()
-        await item.save()
-            .catch((e) => {
-                console.log('error', e)
-            })
-
-        // creating reference to device in department collection
-        await Department.findOneAndUpdate(
-            { 'name': device.department },
-            { $push: { devices: item.id } },
-            function (error, success) {
-                if (error) {
-                    console.log("Error is ",error);
-                } else {
-                    console.log("Success:", success);
-                }
-            })
-        res.status(201).json({ message: 'Устройство добавлено' })
-    } catch (e) {
-        res.status(500).json({ message: 'Произошла ошибка' })
-        console.log("error occurred", e)
-    }
-  },
-  patch: async(req, res) => {
-    try {
-    const devices = req.body
-    res.header("Access-Control-Allow-Origin", "*")
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
-
-    // if comes array -> change only allowed property
-    if(Array.isArray(devices)){
-        Object.values(devices).map(cur => {
-            // console.log('cur', cur)
-            Device.updateOne({_id: cur._id}, {
-                $set: {
-                    allowed: cur.allowed
-                }
-            }).exec()
-        })
-    }
-    // if comes only one item -> change all his properties
-    else if(typeof devices === 'object' && !Array.isArray(devices)) {
-        await Device.findByIdAndUpdate({_id: devices._id}, {$set: {...devices} })
-    }   
-        res.status(200).json({devices, message: "Изменения успешно сохранены!"})
-    } catch (e) {
-        console.log('Error: ', e)
-    }
-  },
-  delete: async(req, res) => {
-      try {
-        res.header("Access-Control-Allow-Origin", "*")
-        res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
-        console.log("req.body._id", req.body._id)
-        const id = req.body._id
-        const device = await Device.findById(id)
-        const department = await Department.findById(device.department)
-        const depDevices = department.devices
-        depDevices.splice(depDevices.indexOf(id), 1)
-        await department.save()
-        await Device.findByIdAndDelete(id)
-
-        res.status(200).json({message: 'Удалено!'})
-      } catch (error) {
-        res.status(500).json({message: 'Серверная ошибка. Не удалось удалить сведения о пользователе'})
+      if (!dbDevice || !user.access.includes(dbDevice.department)) {
+        res.status(httpStatusCodes.Bad_Request, 'Нет устройства с заданным id');
       }
-  }
-}
 
+      res.json(dbDevice);
+    } catch (e) {
+      next(e);
+    }
+  },
+
+  post: async (req, res, next) => {
+    try {
+      const item = await Device.create({ ...req.body, addingDate: new Date() });
+
+      // creating reference to device in department collection
+      await Department.findOneAndUpdate(
+        { _id: item.department },
+        {
+          $push: {
+            devices: item._id
+          }
+        }
+      );
+
+      res.status(201).json({ message: 'Устройство добавлено', device: item });
+    } catch (e) {
+      next(e);
+    }
+  },
+
+  patchSingleDevice: async (req, res, next) => {
+    try {
+      const { deviceId } = req.params;
+      const device = req.body;
+
+      // deleting field to take out a possibility to change devices department
+      delete device.department;
+
+      const dbDevice = await Device.findByIdAndUpdate(deviceId, { $set: { ...device } }, { new: true });
+
+      res.status(200).json({ device: dbDevice, message: 'Изменения успешно сохранены!' });
+    } catch (e) {
+      next(e);
+    }
+  },
+
+  patchDevicesAllowedParam: (req, res, next) => {
+    const devicesToUpdate = req.body;
+    devicesToUpdate.forEach((device) => {
+      Device.findByIdAndUpdate(device._id, { allowed: device.allowed })
+        .exec()
+        .catch((e) => next(e));
+    });
+
+    res.json({ message: 'Изменения успешно сохранены' });
+  },
+
+  delete: async (req, res, next) => {
+    try {
+      const { deviceId } = req.params;
+
+      const device = await Device.findById(deviceId);
+
+      if (!device) {
+        res.status(httpStatusCodes.Bad_Request, 'Нет устройства с заданным id');
+      }
+
+      await Department.findByIdAndUpdate(
+        device.department,
+        {
+          $pull: { devices: deviceId }
+        }
+      );
+
+      await Device.findByIdAndDelete(deviceId);
+
+      res.status(200).json({ message: 'Удалено!' });
+    } catch (e) {
+      next(e);
+    }
+  }
+};

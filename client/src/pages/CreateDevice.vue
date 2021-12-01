@@ -80,8 +80,9 @@ export default ({
   },
   methods: {
     async createDevice(){
-      const {...device} = this.form
-      const response = await request('/api/devices', "POST", device)
+      const {...device} = this.form;
+      const response = await request('/api/devices', "POST", device);
+
       this.devices = await request('/api/devices')
       await this.$swal({text: response.message})
         .then(function(isConfirm) {

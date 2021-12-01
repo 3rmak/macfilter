@@ -63,18 +63,23 @@ export default {
   async created() {
     const devices = await request("/api/devices");
     this.devices = devices.filter((device) => device.department === this.id);
-    const departments = await request("/api/departments");
-    departments.map((cur) => {
-      if (cur._id === this.id) {
-        this.department = cur.name;
-      }
-    });
+
+    const department = await request(`/api/departments/${this.id}`);
+    this.department = department.name;
   },
   methods: {
     async applyChanges() {
-      const response = await request("/api/devices", "PATCH", this.devices);
+      const devicesToUpdate = this.devices.map(item => {
+        return {
+          '_id': item._id,
+          'allowed': item.allowed,
+          'department': item.department
+        }
+      });
+      const response = await request("/api/devices/multiple", "PATCH", devicesToUpdate);
+
       if (response) {
-        this.$swal({ text: "Изменения сохранены!" }).then(() => {
+        this.$swal({ text: response.message }).then(() => {
           location.reload();
         });
         console.log("this.devices", Array.isArray(this.devices));

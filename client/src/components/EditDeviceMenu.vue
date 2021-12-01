@@ -88,7 +88,11 @@ export default {
   methods: {
     async saveChanges() {
       try {
-        const response = await request("/api/devices", "PATCH", this.device);
+        const { allowed, comment, department, type, owner } = this.device;
+        const deviceToUpdate = { type, owner, allowed, comment, department };
+
+        const response = await request(`/api/devices/${this.device._id}`, "PATCH", deviceToUpdate);
+
         await this.$swal({ text: response.message }).then(() => {
           location.reload();
         });

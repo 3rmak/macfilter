@@ -1,6 +1,6 @@
 const router = require('express').Router();
 
-const { userMiddleware } = require('../middleware');
+const { authMiddleware } = require('../middleware');
 
 const { departmentController } = require('../controllers');
 
@@ -12,8 +12,8 @@ const { userRoleEnum } = require('../config');
 router.get(
   '/',
   [
-    userMiddleware.findUserByToken,
-    userMiddleware.hasUserAccess([
+    authMiddleware.findUserByToken,
+    authMiddleware.hasUserRoleAccess([
       userRoleEnum.ADMIN,
       userRoleEnum.NACH_ROP,
       userRoleEnum.REGIONAL
@@ -25,8 +25,8 @@ router.get(
 router.get(
   '/:departmentId',
   [
-    userMiddleware.findUserByToken,
-    userMiddleware.hasUserAccess([
+    authMiddleware.findUserByToken,
+    authMiddleware.hasUserRoleAccess([
       userRoleEnum.ADMIN,
       userRoleEnum.NACH_ROP,
       userRoleEnum.REGIONAL
@@ -39,8 +39,8 @@ router.post(
   '/',
   [
     requestDataValidator(departmentCreateValidator),
-    userMiddleware.findUserByToken,
-    userMiddleware.hasUserAccess()
+    authMiddleware.findUserByToken,
+    authMiddleware.hasUserRoleAccess()
   ],
   departmentController.createDepartment
 );
