@@ -4,16 +4,26 @@ const router = Router();
 
 const { userController } = require('../controllers');
 
+const { authMiddleware } = require('../middleware');
+
+const { requestDataValidator } = require('../helpers');
+const { user: { userPatchValidator } } = require('../validators');
+
 router.get(
-  '/api/users',
+  '/',
   [
+    authMiddleware.findUserByToken,
+    authMiddleware.hasUserRoleAccess()
   ],
   userController.getAll
 );
 
 router.patch(
-  '/api/users',
+  '/:userId',
   [
+    requestDataValidator(userPatchValidator),
+    authMiddleware.findUserByToken,
+    authMiddleware.hasUserRoleAccess()
   ],
   userController.patch
 );

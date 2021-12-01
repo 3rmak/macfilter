@@ -1,6 +1,6 @@
 const { Schema, model } = require('mongoose');
 
-const { dbTablesEnum } = require('../config');
+const { dbTablesEnum, userRoleEnum } = require('../config');
 
 const schema = new Schema({
   email: {
@@ -17,6 +17,7 @@ const schema = new Schema({
 
   role: {
     type: String,
+    enum: Object.values(userRoleEnum),
     required: true
   },
 
@@ -27,6 +28,7 @@ const schema = new Schema({
 
   isActive: {
     type: Boolean,
+    default: true,
     required: true
   }
 });
