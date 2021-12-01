@@ -27,7 +27,7 @@ if (ENV === 'dev') {
 
 app.use('/api/auth', authRoutes);
 app.use('/api/devices', deviceRoutes);
-app.use(userRoutes);
+app.use('/api/users', userRoutes);
 app.use('/api/departments', departmentRoutes);
 
 app.use(_MainErrorHandler);
