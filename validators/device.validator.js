@@ -6,6 +6,7 @@ const createDeviceValidator = Joi.object({
   department: Joi.string()
     .trim()
     .lowercase()
+    .regex(regexp.MONGO_OBJECTID)
     .required(),
 
   type: Joi.string()
@@ -33,6 +34,7 @@ const patchSingleDeviceValidator = Joi.object({
   department: Joi.string()
     .trim()
     .lowercase()
+    .regex(regexp.MONGO_OBJECTID)
     .required(),
 
   type: Joi.string()
@@ -56,6 +58,7 @@ const _singleDevice = Joi.object({
   department: Joi.string()
     .trim()
     .lowercase()
+    .regex(regexp.MONGO_OBJECTID)
     .required(),
 
   allowed: Joi.boolean()

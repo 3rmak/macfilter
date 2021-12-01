@@ -21,7 +21,11 @@ const userCreateValidator = Joi.object({
     .allow(...Object.values(userRoleEnum))
     .required(),
 
-  access: Joi.array(),
+  access: Joi.array()
+    .items(
+      Joi.string()
+        .regex(regexp.MONGO_OBJECTID)
+    ),
 
   password: Joi.string()
     .trim()
@@ -33,12 +37,17 @@ const userPatchValidator = Joi.object({
   role: Joi.string()
     .allow(...Object.values(userRoleEnum)),
 
-  access: Joi.array(),
+  access: Joi.array()
+    .items(
+      Joi.string()
+        .regex(regexp.MONGO_OBJECTID)
+    ),
 
   password: Joi.string()
     .trim()
     .regex(regexp.PASS_REGEXP),
 
+  isActive: Joi.boolean()
 });
 
 module.exports = {
