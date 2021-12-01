@@ -28,6 +28,10 @@ module.exports = {
         next(new ErrorHandler(httpStatusCodes.Unauthorized, 'Bad token'));
       }
 
+      if (!user.isActive) {
+        next(new ErrorHandler(httpStatusCodes.Unauthorized, 'Пользователь не активен. Обратитесь к администратору'));
+      }
+
       req.locals = {
         ...req.locals,
         token: dbToken,
@@ -70,6 +74,10 @@ module.exports = {
       const user = await User.findOne({ email }).select('+password');
       if (!user) {
         next(new ErrorHandler(httpStatusCodes.Unauthorized, 'Bad token'));
+      }
+
+      if (!user.isActive) {
+        next(new ErrorHandler(httpStatusCodes.Unauthorized, 'Пользователь не активен. Обратитесь к администратору'));
       }
 
       await passwordService.isPassMatches(password, user.password);
