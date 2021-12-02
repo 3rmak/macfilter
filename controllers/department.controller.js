@@ -1,6 +1,12 @@
-const { v4 } = require('uuid');
+const mongoose = require('mongoose');
+
+const Device = require('../models/Device');
 const Department = require('../models/Department');
 const User = require('../models/User');
+
+const ErrorHandler = require('../errors/ErrorHandler');
+
+const { httpStatusCodes } = require('../config');
 
 module.exports = {
   getAllDepartments: async (req, res, next) => {
@@ -49,6 +55,48 @@ module.exports = {
       });
 
       res.status(201).json({ department, message: 'Филиал был успешно добавлен. Права пользователю добавлены' });
+    } catch (e) {
+      next(e);
+    }
+  },
+
+  removeDepartmentById: async (req, res, next) => {
+    try {
+      const { departmentId } = req.params;
+
+      const session = await mongoose.startSession();
+
+      await session.withTransaction(async () => {
+        try {
+          await Department.findByIdAndDelete(
+            departmentId,
+            { session }
+          );
+
+          await Device.deleteMany(
+            { department: departmentId },
+            { session }
+          );
+
+          await User.updateMany(
+            { access: departmentId },
+            { $pull: { access: departmentId } },
+            { session }
+          );
+
+          await session.commitTransaction();
+        } catch (e) {
+          await session.abortTransaction();
+          throw new ErrorHandler(
+            httpStatusCodes.Internal_Server_Error,
+            `Во время удаления произошла ошибка. Проверьте правильность ввода | ${e.message}`
+          );
+        }
+      });
+
+      session.endSession();
+
+      res.json({ message: 'Удалено' });
     } catch (e) {
       next(e);
     }

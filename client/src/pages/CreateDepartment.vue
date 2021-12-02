@@ -26,6 +26,7 @@
 
 <script>
 import Navbar from '../components/Navbar'
+
 import request from '../assets/scripts/request'
 
 export default {
@@ -62,7 +63,15 @@ export default {
   },
   async created() {
     try {
-      this.users = await request('/api/users')
+      const response = await request('/api/users');
+
+      for (let item of response) {
+        if (item.role === 'router' || item.role == 'nachrop' && item.access.length > 0) {
+          continue;
+        }
+
+        this.users.push(item);
+      }
     } catch (error) {
       this.$swal({text: 'Ошибка. Список пользователей не загружен'})
         .exec();

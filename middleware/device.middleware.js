@@ -1,5 +1,5 @@
-const Department = require('../models/Department');
 const Device = require('../models/Device');
+const Department = require('../models/Department');
 
 const ErrorHandler = require('../errors/ErrorHandler');
 
