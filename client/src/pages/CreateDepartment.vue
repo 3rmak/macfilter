@@ -66,7 +66,7 @@ export default {
       const response = await request('/api/users');
 
       for (let item of response) {
-        if (item.role === 'router' || item.role == 'nachrop' && item.access.length > 0) {
+        if (item.role === 'router' || item.role === 'nachrop' && item.access.length > 0) {
           continue;
         }
 
@@ -79,8 +79,4 @@ export default {
   },
 }
 </script>
-<style scoped>
-  .access {
-    margin-top: 5px;
-  }
-</style>
+<style scoped></style>
