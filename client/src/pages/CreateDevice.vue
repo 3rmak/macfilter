@@ -31,7 +31,7 @@
         <div class="form-group mb-3">
           <!--            добавить валидацию мака-->
           <label for="mac">MAC адресс устройства</label>
-          <input type="text" class="form-control" id="mac" v-model="form.mac" required>
+          <input type="text" class="form-control" id="mac" v-model="form.mac" placeholder="aa:bb:cc:12:34:56" required>
         </div>
 
         <div class="form-group form-check form-check-inline mb-3">
@@ -65,14 +65,12 @@ export default ({
   data() {
     return {
       form: {
-        id: '',
         department:'',
         type: '',
         owner: '',
         mac: '',
         allowed: 'false',
-        comment: '',
-        addingDate: (new Date())
+        comment: ''
       },
       types,
       departments: []

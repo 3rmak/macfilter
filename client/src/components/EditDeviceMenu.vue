@@ -46,7 +46,7 @@
                 <option>Планшет</option>
                 <option>Ноутбук</option>
                 <hr />
-                <option>Другое</option>
+                <option>Other</option>
               </select>
             </span>
           </div>
@@ -106,8 +106,7 @@ export default {
     },
     async deleteDevice() {
       try {
-        console.log("this.device", this.device);
-        const response = await request("/api/devices", "DELETE", this.device);
+        const response = await request(`/api/devices/${this.device._id}`, "DELETE");
         await this.$swal({ text: response.message }).then(() => {
           location.reload();
         });

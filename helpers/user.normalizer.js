@@ -2,7 +2,7 @@ module.exports = {
   deletePrivateFields: (user) => {
     const fieldsToRemove = [
       'password',
-      'isActive'
+      '__v'
     ];
     user = user.toObject();
 

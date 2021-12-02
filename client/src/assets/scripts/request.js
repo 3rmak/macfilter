@@ -14,16 +14,15 @@ const request = async (url, method="GET", data=null) => {
       if(data){
           body = JSON.stringify(data)
       }
-      console.log("headers", headers)
       const response = await fetch(`${baseURL}${url}`, {
           method,
           mode,
           headers,
           body
       })
-      return await response.json()
+      return response.json()
   } catch (e){
-      console.warn('Errorinio: ', e.message)
+      alert(e.message)
   }
 }
 

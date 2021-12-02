@@ -51,8 +51,7 @@ export default {
       event.preventDefault();
 
       const user = {...this.loginForm}
-      const response = await request('/api/auth/login', "POST", user)
-      console.log("response", response)
+      const response = await request('/api/auth/login', "POST", user);
       await this.$swal({text: response.message})
         .then(function(isConfirm) {
             if (isConfirm) {

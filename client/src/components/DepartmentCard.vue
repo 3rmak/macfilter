@@ -20,9 +20,6 @@ export default {
     department: {
       type: Object
     }
-  },
-  async mounted (){
-    console.log("Departs: ", this.department)
   }
 }
 </script>
@@ -39,7 +36,7 @@ export default {
   //   display: block;
   //   margin-left: auto;
   //   margin-right: auto;
-    
+
   // }
   .card-title {
     position: absolute;

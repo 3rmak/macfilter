@@ -40,12 +40,20 @@
         >
           Права
         </button>
+        <button
+            type="button"
+            class="btn btn-outline-info"
+            @click="setOption('isActive')"
+        >
+          Состояние
+        </button>
       </div>
       <div class="if-option-selected" v-if="option">
         <div class="if-password" v-if="option === 'Password'">
           <label for="new-pass">Введите пароль</label>
           <input
             type="password"
+            class="form-control"
             id="new-pass"
             aria-describedby="passHelp"
             @input="editForm.password = $event.target.value"
@@ -53,7 +61,7 @@
           <small id="passHelp" class="form-text text-muted"
             >Придумайте сложный пароль для пользователя
           </small>
-          <button type="submit" class="btn btn-primary" @click="applyChanges">
+          <button type="submit" class="btn btn-primary" @click="applyChanges('password')">
             Сменить
           </button>
         </div>
@@ -64,25 +72,21 @@
               {{ item }}
             </option>
           </select>
-          <button type="submit" class="btn btn-primary" @click="applyChanges">
+          <button type="submit" class="btn btn-primary" @click="applyChanges('role')">
             Сменить
           </button>
         </div>
         <div class="if-rights" v-if="option === 'Rights'">
           <div class="form-group">
-            <label for="access">Доступ к филиалам</label>
-            <div v-if="multipleSelect">
+            <label>Доступ к филиалам</label>
+            <div class="if-rights-deep" v-if="multipleSelect">
               <select
                 multiple
                 class="form-control"
-                id="access"
+                id="access-multi"
                 aria-describedby="selectHelp"
                 v-model="editForm.access"
               >
-                <!-- <option 
-            v-for="department in departments" 
-            :key="department.id" 
-            >{{ department.name }}</option> -->
                 <option
                   v-for="department in departments"
                   :key="department.name"
@@ -98,15 +102,15 @@
               <button
                 type="submit"
                 class="btn btn-primary"
-                @click="applyChanges"
+                @click="applyChanges('access')"
               >
                 Сменить
               </button>
             </div>
-            <div v-else>
+            <div class="if-rights-deep" v-else>
               <select
                 class="form-control"
-                id="access"
+                id="access-solo"
                 v-model="editForm.access"
               >
                 <option
@@ -120,12 +124,26 @@
               <button
                 type="submit"
                 class="btn btn-primary"
-                @click="applyChanges"
+                @click="applyChanges('access')"
               >
                 Сменить
               </button>
             </div>
           </div>
+        </div>
+        <div class="if-isActive" v-if="option === 'isActive'">
+          <div class="form-check">
+            <input
+                type="checkbox"
+                class="form-check-input"
+                id="isActive"
+                v-model="editForm.isActive"
+            />
+            <label class="form-check-label" for="isActive">Пользователь активен?</label>
+          </div>
+          <button type="submit" class="btn btn-primary" @click="applyChanges('isActive')">
+            Сменить
+          </button>
         </div>
       </div>
     </div>
@@ -145,6 +163,7 @@ export default {
         role: "",
         password: "",
         access: [],
+        isActive: false
       },
       option: "",
       allUsersList: [],
@@ -155,8 +174,8 @@ export default {
   computed: {
     multipleSelect() {
       const user = { ...this.editForm };
-      console.log(user);
-      if (user.role === "nachrop") {
+
+      if (user.role === "nachrop" || user.role === "router") {
         return false;
       }
       return true;
@@ -165,17 +184,19 @@ export default {
   methods: {
     setOption(newVal) {
       this.option = newVal;
-      console.log("this.editForm", this.editForm);
-      console.log("option", this.option);
     },
     copyUserData(e) {
       let user = this.allUsersList.find((u) => u._id == e.target.value);
       this.editForm = { ...user };
     },
-    async applyChanges() {
-      const { ...user } = this.editForm;
-      const response = await request("/api/users", "PATCH", user);
-      await this.$swal({ text: response.message }).then(function (isConfirm) {
+    async applyChanges(field) {
+      if(field === 'access' && !Array.isArray(this.editForm[field])) {
+        this.editForm[field] = [this.editForm[field]];
+      }
+
+      const user = { [field]: this.editForm[field] };
+      const response = await request(`/api/users/${this.editForm._id}`, "PATCH", user);
+      this.$swal({ text: response.message }).then(function (isConfirm) {
         if (isConfirm) {
           location.reload();
         }
@@ -192,4 +213,15 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+  .if-user-selected {
+    padding: 10px 0px;
+  }
+  .if-user-selected button {
+    margin-right: 3px;
+  }
+
+  .if-password > button, .if-position > button, .if-rights-deep > button, .if-isActive > button  {
+    margin-top: 10px;
+  }
+</style>

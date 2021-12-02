@@ -28,6 +28,7 @@ const createDeviceValidator = Joi.object({
 
   comment: Joi.string()
     .trim()
+    .allow('')
 });
 
 const patchSingleDeviceValidator = Joi.object({
@@ -48,6 +49,7 @@ const patchSingleDeviceValidator = Joi.object({
 
   comment: Joi.string()
     .trim()
+    .allow('')
 });
 
 const _singleDevice = Joi.object({

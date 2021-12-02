@@ -35,7 +35,7 @@ module.exports = {
 
       const dbDepartment = await Department.findById(department);
 
-      if (!dbDepartment || dbDepartment.devices.length === 0) {
+      if (!dbDepartment) {
         next(new ErrorHandler(httpStatusCodes.Bad_Request, 'Bad input'));
       }
 
