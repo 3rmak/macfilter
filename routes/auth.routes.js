@@ -6,7 +6,7 @@ const { authController } = require('../controllers');
 
 const { requestDataValidator } = require('../helpers');
 
-const { authMiddleware } = require('../middleware');
+const { authMiddleware, userMiddleware } = require('../middleware');
 
 const { user: { userCreateValidator } } = require('../validators');
 
@@ -15,6 +15,7 @@ router.post(
   '/register',
   [
     requestDataValidator(userCreateValidator),
+    userMiddleware.userAccessListValidator,
     authMiddleware.findUserByToken,
     authMiddleware.hasUserRoleAccess()
   ], authController.register

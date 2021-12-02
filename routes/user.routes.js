@@ -4,7 +4,7 @@ const router = Router();
 
 const { userController } = require('../controllers');
 
-const { authMiddleware } = require('../middleware');
+const { authMiddleware, userMiddleware } = require('../middleware');
 
 const { requestDataValidator } = require('../helpers');
 const { user: { userPatchValidator } } = require('../validators');
@@ -22,6 +22,7 @@ router.patch(
   '/:userId',
   [
     requestDataValidator(userPatchValidator),
+    userMiddleware.userAccessListValidator,
     authMiddleware.findUserByToken,
     authMiddleware.hasUserRoleAccess()
   ],

@@ -1,6 +1,6 @@
 const router = require('express').Router();
 
-const { authMiddleware } = require('../middleware');
+const { authMiddleware, departmentMiddleware } = require('../middleware');
 
 const { departmentController } = require('../controllers');
 
@@ -40,9 +40,19 @@ router.post(
   [
     requestDataValidator(departmentCreateValidator),
     authMiddleware.findUserByToken,
-    authMiddleware.hasUserRoleAccess()
+    authMiddleware.hasUserRoleAccess(),
+    departmentMiddleware.userIdListValidator
   ],
   departmentController.createDepartment
+);
+
+router.delete(
+  '/:departmentId',
+  [
+    authMiddleware.findUserByToken,
+    authMiddleware.hasUserRoleAccess()
+  ],
+  departmentController.removeDepartmentById
 );
 
 module.exports = router;
