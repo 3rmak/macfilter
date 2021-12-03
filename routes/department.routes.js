@@ -46,6 +46,7 @@ router.post(
   departmentController.createDepartment
 );
 
+// currently not working because of transactions
 router.delete(
   '/:departmentId',
   [
