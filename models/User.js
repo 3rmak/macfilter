@@ -1,6 +1,10 @@
 const { Schema, model } = require('mongoose');
 
-const { dbTablesEnum, userRoleEnum } = require('../config');
+const ErrorHandler = require('../errors/ErrorHandler');
+
+const { passwordService } = require('../services');
+
+const { dbTablesEnum, httpStatusCodes, userRoleEnum } = require('../config');
 
 const schema = new Schema({
   email: {
@@ -33,4 +37,29 @@ const schema = new Schema({
   }
 });
 
-module.exports = model(dbTablesEnum.USERS, schema);
+const userModel = model(dbTablesEnum.USERS, schema);
+const default_admin = {
+  email: 'admin@farbex.ua',
+  role: userRoleEnum.ADMIN,
+  access: [],
+  password: 'admin'
+};
+
+(async () => {
+  try {
+    const admin = await userModel.findOne({ email: 'admin@farbex.ua' });
+    if (admin) {
+      return;
+    }
+
+    const hashedPass = await passwordService.hashPass(default_admin.password);
+    await userModel.create({ ...default_admin, password: hashedPass });
+  } catch (e) {
+    throw new ErrorHandler(
+      httpStatusCodes.Internal_Server_Error,
+      'Во время создания профиля default админа произошла ошибка'
+    );
+  }
+})();
+
+module.exports = userModel;
