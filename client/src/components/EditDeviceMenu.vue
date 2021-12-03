@@ -24,7 +24,6 @@
             <span class="col">
               <input
                 type="text"
-                value="setDefaultOwner()"
                 :placeholder="device.owner"
                 v-model="device.owner"
               />
@@ -78,11 +77,6 @@ export default {
   props: {
     device: {
       type: Object,
-    },
-  },
-  computed: {
-    setDefaultOwner() {
-      return this.device.owner;
     },
   },
   methods: {
