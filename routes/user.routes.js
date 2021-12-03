@@ -29,4 +29,13 @@ router.patch(
   userController.patch
 );
 
+router.delete(
+  '/:userId',
+  [
+    authMiddleware.findUserByToken,
+    authMiddleware.hasUserRoleAccess()
+  ],
+  userController.deleteUserById
+);
+
 module.exports = router;

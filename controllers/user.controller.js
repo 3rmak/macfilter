@@ -38,5 +38,17 @@ module.exports = {
     } catch (e) {
       next(e);
     }
+  },
+
+  deleteUserById: async (req, res, next) => {
+    try {
+      const { userId } = req.params;
+
+      const user = await User.findByIdAndDelete(userId);
+
+      res.json({ user });
+    } catch (e) {
+      next(e);
+    }
   }
 };

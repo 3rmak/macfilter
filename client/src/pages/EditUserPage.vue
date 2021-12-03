@@ -47,6 +47,13 @@
         >
           Состояние
         </button>
+        <button
+            type="button"
+            class="btn btn-outline-danger"
+            @click="setOption('isDelete')"
+        >
+          Удалить
+        </button>
       </div>
       <div class="if-option-selected" v-if="option">
         <div class="if-password" v-if="option === 'Password'">
@@ -145,6 +152,14 @@
             Сменить
           </button>
         </div>
+        <div class="if-isDelete" v-if="option === 'isDelete'">
+          <div>
+            <label for="isDelete">Вы действительно хотите удалить пользователя?</label>
+          </div>
+          <button type="submit" id="isDelete" class="btn btn-danger" @click="deleteUser()">
+            Подтвердить удаление
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -202,6 +217,23 @@ export default {
         }
       });
     },
+    async deleteUser() {
+      try {
+        const response = await request(`/api/users/${this.editForm._id}`, "DELETE");
+
+        this.$swal({ text: response.message }).then(function (isConfirm) {
+          if (isConfirm) {
+            location.reload();
+          }
+        });
+      } catch (e) {
+        this.$swal({ text: e.message }).then((isConfirm) => {
+          if (isConfirm) {
+            location.reload();
+          }
+        });
+      }
+    }
   },
   components: {
     Navbar,
