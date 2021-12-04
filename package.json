@@ -4,6 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "build": "npm i && npm i --prefix client",
+    "start": "pm2 kill && pm2 start app.js --watch --name back-app && pm2 start 'npm run serve --watch --prefix client' --name front-app",
     "dev": "concurrently \"nodemon app.js\" \"npm run serve --prefix client\" "
   },
   "keywords": [],
@@ -25,6 +27,7 @@
     "passport": "^0.4.1",
     "passport-http": "^0.3.0",
     "passport-jwt": "^4.0.0",
+    "pm2": "^5.1.2",
     "uuid": "^8.3.2"
   },
   "devDependencies": {

@@ -4,7 +4,9 @@ const ErrorHandler = require('../errors/ErrorHandler');
 
 const { passwordService } = require('../services');
 
-const { dbTablesEnum, httpStatusCodes, userRoleEnum } = require('../config');
+const {
+  dbTablesEnum, defaultAdminCredentials, httpStatusCodes, userRoleEnum
+} = require('../config');
 
 const schema = new Schema({
   email: {
@@ -39,15 +41,15 @@ const schema = new Schema({
 
 const userModel = model(dbTablesEnum.USERS, schema);
 const default_admin = {
-  email: 'admin@farbex.ua',
+  email: defaultAdminCredentials.EMAIL,
   role: userRoleEnum.ADMIN,
   access: [],
-  password: 'admin'
+  password: defaultAdminCredentials.PASSWORD
 };
 
 (async () => {
   try {
-    const admin = await userModel.findOne({ email: 'admin@farbex.ua' });
+    const admin = await userModel.findOne({ email: defaultAdminCredentials.EMAIL });
     if (admin) {
       return;
     }
