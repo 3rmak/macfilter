@@ -24,7 +24,6 @@
             <span class="col">
               <input
                 type="text"
-                value="setDefaultOwner()"
                 :placeholder="device.owner"
                 v-model="device.owner"
               />
@@ -46,7 +45,7 @@
                 <option>Планшет</option>
                 <option>Ноутбук</option>
                 <hr />
-                <option>Другое</option>
+                <option>Other</option>
               </select>
             </span>
           </div>
@@ -80,15 +79,14 @@ export default {
       type: Object,
     },
   },
-  computed: {
-    setDefaultOwner() {
-      return this.device.owner;
-    },
-  },
   methods: {
     async saveChanges() {
       try {
-        const response = await request("/api/devices", "PATCH", this.device);
+        const { allowed, comment, department, type, owner } = this.device;
+        const deviceToUpdate = { type, owner, allowed, comment, department };
+
+        const response = await request(`/api/devices/${this.device._id}`, "PATCH", deviceToUpdate);
+
         await this.$swal({ text: response.message }).then(() => {
           location.reload();
         });
@@ -102,8 +100,7 @@ export default {
     },
     async deleteDevice() {
       try {
-        console.log("this.device", this.device);
-        const response = await request("/api/devices", "DELETE", this.device);
+        const response = await request(`/api/devices/${this.device._id}`, "DELETE");
         await this.$swal({ text: response.message }).then(() => {
           location.reload();
         });

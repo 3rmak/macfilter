@@ -1,5 +1,0 @@
-{
-  "port": 3001,
-  "jwtSecret": "SOme strIIIng",
-  "mongoUri": "mongodb+srv://root:xBJLeQdd7bddQdZI@macfilter.lyohq.mongodb.net/db"
-}

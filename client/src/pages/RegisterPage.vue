@@ -53,12 +53,8 @@
               class="form-control"
               id="access"
               aria-describedby="selectHelp"
-              v-model="userForm.access"
+              v-model="access"
             >
-              <!-- <option 
-            v-for="department in departments" 
-            :key="department.id" access
-            >{{ department.name }}</option> -->
               <option
                 v-for="department in departments"
                 :key="department.name"
@@ -73,7 +69,12 @@
             </small>
           </div>
           <div v-else>
-            <select class="form-control" id="access" v-model="userForm.access">
+            <select class="form-control" id="access" v-model="access">
+              <option
+                  :value="[]"
+              >
+                Отсутсвует
+              </option>
               <option
                 v-for="department in departments"
                 :key="department.name"
@@ -109,6 +110,7 @@ export default {
         role: "admin",
         access: [],
       },
+      access: [],
       departments: [],
       re_password: "",
       roles,
@@ -117,9 +119,13 @@ export default {
   methods: {
     async createUser() {
       try {
-        const user = { ...this.userForm };
-        const password = this.userForm.password;
-        if (password !== this.re_password) {
+        let user = { ...this.userForm };
+
+        user.access = Array.isArray(this.access) ?
+            this.access :
+            [this.access];
+
+        if (this.userForm.password !== this.re_password) {
           this.$swal("Пароли не совпадают!").then(function (isConfirm) {
             if (isConfirm) {
               location.reload();
@@ -149,21 +155,20 @@ export default {
   computed: {
     multipleSelect() {
       const user = { ...this.userForm };
-      if (user.role === "nachrop") {
-        return false;
-      }
-      return true;
+      return !(user.role === "nachrop" || user.role === "router");
     },
   },
   async mounted() {
-    // this.departments = JSON.parse(localStorage.getItem("departments"));
-    // console.log("this.departments", this.departments);
     try {
       this.departments = await request('/api/departments')
     } catch (error) {
-      console.warn('can not get departments list')
+      this.$swal({
+        title: "Произошла ошибка, обратитесь к системному администратору!",
+        text: error.message,
+        type: "error",
+      });
     }
-    
+
   },
 };
 </script>

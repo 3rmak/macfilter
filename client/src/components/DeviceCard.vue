@@ -4,7 +4,7 @@
       <!-- allowed ? card color = green  -->
       <div
         class="card-header"
-        
+
         :style="{ background: device.allowed ? '#3c6' : '#CD5C5C' }"
       >
         <div class="logo-container">
@@ -22,7 +22,7 @@
         </a>
         <!-- <button class="btn btn-secondary wrapper pencil" @click="showModal">Edit</button> -->
         <!-- Modal  -->
-        
+
       </div>
       <div class="card-body">
         <div class="card-title">
@@ -78,6 +78,7 @@ export default {
   computed: {
     getLogoPath() {
       const path = this.logoNames[this.device.type];
+      console.log('this.device.type', this.device.type)
       console.log("path", path);
       return path;
     },
@@ -132,7 +133,7 @@ h5 {
   -o-transform: translateY(-2px);
   transform: translateY(-2px);
 }
-*/ .card {
+.card {
   border-radius: 25px;
   min-width: 200px;
   max-width: 800px;

@@ -1,40 +1,29 @@
-const { Router } = require('express')
-const { check, validationResult } = require('express-validator')
-const passport = require('passport')
-const router = Router()
-const cors = require('cors')
-const AuthController = require('../controllers/auth')
-const middlewareACL = require('../middleware/acl')
+const { Router } = require('express');
 
-router.use(
-    cors({
-        origin: "*",
-    })
-)
+const router = Router();
+
+const { authController } = require('../controllers');
+
+const { requestDataValidator } = require('../helpers');
+
+const { authMiddleware, userMiddleware } = require('../middleware');
+
+const { user: { userCreateValidator } } = require('../validators');
+
 // /api/auth/register
 router.post(
-    '/api/auth/register',
-    [     
-        middlewareACL('admin'),
-        passport.authenticate('jwt', { session: false }),
-        check('email', 'email').isEmail(),
-        check('password', 'pass').exists(),
-        check('role', 'role').exists(),
-        
-    ],
-    // check('email', 'Неверный email').isEmail(),
-    // check('password', 'Минимальный пароль 6 символов').isLength({min: 6})
-    AuthController.register,
-   )
+  '/register',
+  [
+    requestDataValidator(userCreateValidator),
+    userMiddleware.userAccessListValidator,
+    authMiddleware.findUserByToken,
+    authMiddleware.hasUserRoleAccess()
+  ], authController.register
+);
 
 // /api/auth/login
 router.post(
-    '/api/auth/login',
-    [
-        check('email', 'Некорректный email').normalizeEmail().isEmail(),
-        check('password', 'Введите пароль').exists()
-    ],
-    AuthController.login
-    )
+  '/login', authController.login
+);
 
-module.exports = router
+module.exports = router;

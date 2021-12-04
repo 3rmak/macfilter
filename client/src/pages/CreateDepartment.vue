@@ -12,7 +12,7 @@
             <label for="access" class="form-label">Открыть доступ пользователям:</label>
             <div class="form-check" v-for="user in users" :key="user._id" id="access">
               <input class="form-check-input" type="checkbox" id="user" :value="user._id" v-model="departForm.userIdList">
-              <label class="form-check-label" :for="user._id">{{user.email}}</label>            
+              <label class="form-check-label" :for="user">{{user.email}}</label>
             </div>
           </div>
         </div>
@@ -21,13 +21,13 @@
         </div>
       </form>
     </div>
-  </div>  
+  </div>
 </template>
 
 <script>
 import Navbar from '../components/Navbar'
-import request from '../assets/scripts/request'
 
+import request from '../assets/scripts/request'
 
 export default {
   components: {
@@ -36,7 +36,6 @@ export default {
   data (){
     return {
       departForm: {
-                id: '',
                 name: '',
                 devices: [],
                 userIdList: []
@@ -54,25 +53,30 @@ export default {
             location.reload()
           })
       } catch (error) {
-        await this.$swal({text: 'Не возможно создать новый филиал клиентская ошибка'})
+        this.$swal({text: 'Не возможно создать новый филиал клиентская ошибка'})
           .then(()=>{
             location.reload()
           })
       }
-      
+
     }
   },
   async created() {
     try {
-      this.users = await request('/api/users')
+      const response = await request('/api/users');
+
+      for (let item of response) {
+        if (item.role === 'router' || item.role === 'nachrop' && item.access.length > 0) {
+          continue;
+        }
+
+        this.users.push(item);
+      }
     } catch (error) {
-      console.log('Ошибка. Список пользователей не загружен')
+      this.$swal({text: 'Ошибка. Список пользователей не загружен'})
+        .exec();
     }
   },
 }
 </script>
-<style scoped>
-  .access {
-    margin-top: 5px;
-  }
-</style>
+<style scoped></style>
