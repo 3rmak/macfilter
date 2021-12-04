@@ -9,7 +9,7 @@
         @click="copyUserData($event)"
         required
       >
-        <option value="" disabled selected>Choose your hero</option>
+        <option value="" disabled selected>Выберите пользователя из выпадающего списка</option>
         <option
           v-for="user in allUsersList"
           :key="user.email"
