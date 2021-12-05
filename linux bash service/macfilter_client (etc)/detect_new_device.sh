@@ -45,9 +45,14 @@ if [ "$1" == "add" ] && [ "$unknown_mac_addr" -ne 0 ]; then
     "comment": "'"$4"'"
   }'>>log.txt
 
-  # adding rules to iptables
-  echo "iptables -A INPUT -m mac --mac-source $2 -j DROP" >> /etc/firewall.user
-  echo "iptables -A FORWARD -m mac --mac-source $2 -j DROP" >> /etc/firewall.user
+  # adding rules to iptables once
+  grep -iq "$2" /etc/firewall.user
+  is_rule_already_added=$?
+  
+  if [ "$is_rule_already_added" -ne 0 ]; then
+    echo "iptables -A INPUT -m mac --mac-source $2 -j DROP" >> /etc/firewall.user
+    echo "iptables -A FORWARD -m mac --mac-source $2 -j DROP" >> /etc/firewall.user
+  fi 
 
   /etc/init.d/firewall restart
 fi
